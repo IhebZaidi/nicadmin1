@@ -1,0 +1,431 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-add" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel contacts add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>Retour à la liste</button>
+	{END message_back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Afficher</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Editer</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN nom_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nom}  r-vertical-field" 
+	data-signal-error-for="nom{$id}" {$required_attr_nom}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="nom" data-fieldname="nom" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_nom}">
+		{BEGIN nom_label}{$label contacts nom }{END nom_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$nom_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nom" {$tooltipAttr contacts nom } >
+		<div class="text-muted" >
+		{$tooltip contacts nom }		</div>
+	</div>
+</div>
+
+
+{END nom_fieldblock}
+											
+{BEGIN Prenom_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Prenom}  r-vertical-field" 
+	data-signal-error-for="Prenom{$id}" {$required_attr_Prenom}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="Prenom" data-fieldname="Prenom" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Prenom}">
+		{BEGIN Prenom_label}{$label contacts Prenom }{END Prenom_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$Prenom_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Prenom" {$tooltipAttr contacts Prenom } >
+		<div class="text-muted" >
+		{$tooltip contacts Prenom }		</div>
+	</div>
+</div>
+
+
+{END Prenom_fieldblock}
+											
+{BEGIN personne_physique_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_personne_physique}  r-vertical-field" 
+	data-signal-error-for="personne_physique{$id}" {$required_attr_personne_physique}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="personne_physique" data-fieldname="personne_physique" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_personne_physique}">
+		{BEGIN personne_physique_label}{$label contacts personne_physique }{END personne_physique_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$personne_physique_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="personne_physique" {$tooltipAttr contacts personne_physique } >
+		<div class="text-muted" >
+		{$tooltip contacts personne_physique }		</div>
+	</div>
+</div>
+
+
+{END personne_physique_fieldblock}
+											
+{BEGIN adresse_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_adresse}  r-vertical-field" 
+	data-signal-error-for="adresse{$id}" {$required_attr_adresse}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="adresse" data-fieldname="adresse" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_adresse}">
+		{BEGIN adresse_label}{$label contacts adresse }{END adresse_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$adresse_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="adresse" {$tooltipAttr contacts adresse } >
+		<div class="text-muted" >
+		{$tooltip contacts adresse }		</div>
+	</div>
+</div>
+
+
+{END adresse_fieldblock}
+											
+{BEGIN tel_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tel}  r-vertical-field" 
+	data-signal-error-for="tel{$id}" {$required_attr_tel}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="tel" data-fieldname="tel" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_tel}">
+		{BEGIN tel_label}{$label contacts tel }{END tel_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$tel_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tel" {$tooltipAttr contacts tel } >
+		<div class="text-muted" >
+		{$tooltip contacts tel }		</div>
+	</div>
+</div>
+
+
+{END tel_fieldblock}
+											
+{BEGIN email_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_email}  r-vertical-field" 
+	data-signal-error-for="email{$id}" {$required_attr_email}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="email" data-fieldname="email" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_email}">
+		{BEGIN email_label}{$label contacts email }{END email_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$email_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="email" {$tooltipAttr contacts email } >
+		<div class="text-muted" >
+		{$tooltip contacts email }		</div>
+	</div>
+</div>
+
+
+{END email_fieldblock}
+											
+{BEGIN fax_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fax}  r-vertical-field" 
+	data-signal-error-for="fax{$id}" {$required_attr_fax}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="fax" data-fieldname="fax" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_fax}">
+		{BEGIN fax_label}{$label contacts fax }{END fax_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$fax_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="fax" {$tooltipAttr contacts fax } >
+		<div class="text-muted" >
+		{$tooltip contacts fax }		</div>
+	</div>
+</div>
+
+
+{END fax_fieldblock}
+											
+{BEGIN adresse2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_adresse2}  r-vertical-field" 
+	data-signal-error-for="adresse2{$id}" {$required_attr_adresse2}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="adresse2" data-fieldname="adresse2" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_adresse2}">
+		{BEGIN adresse2_label}{$label contacts adresse2 }{END adresse2_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$adresse2_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="adresse2" {$tooltipAttr contacts adresse2 } >
+		<div class="text-muted" >
+		{$tooltip contacts adresse2 }		</div>
+	</div>
+</div>
+
+
+{END adresse2_fieldblock}
+											
+{BEGIN state_prov_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_state_prov}  r-vertical-field" 
+	data-signal-error-for="state_prov{$id}" {$required_attr_state_prov}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="state_prov" data-fieldname="state_prov" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_state_prov}">
+		{BEGIN state_prov_label}{$label contacts state_prov }{END state_prov_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$state_prov_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="state_prov" {$tooltipAttr contacts state_prov } >
+		<div class="text-muted" >
+		{$tooltip contacts state_prov }		</div>
+	</div>
+</div>
+
+
+{END state_prov_fieldblock}
+											
+{BEGIN zip_code_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_zip_code}  r-vertical-field" 
+	data-signal-error-for="zip_code{$id}" {$required_attr_zip_code}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="zip_code" data-fieldname="zip_code" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_zip_code}">
+		{BEGIN zip_code_label}{$label contacts zip_code }{END zip_code_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$zip_code_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="zip_code" {$tooltipAttr contacts zip_code } >
+		<div class="text-muted" >
+		{$tooltip contacts zip_code }		</div>
+	</div>
+</div>
+
+
+{END zip_code_fieldblock}
+											
+{BEGIN city_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_city}  r-vertical-field" 
+	data-signal-error-for="city{$id}" {$required_attr_city}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="city" data-fieldname="city" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_city}">
+		{BEGIN city_label}{$label contacts city }{END city_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$city_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="city" {$tooltipAttr contacts city } >
+		<div class="text-muted" >
+		{$tooltip contacts city }		</div>
+	</div>
+</div>
+
+
+{END city_fieldblock}
+											
+{BEGIN country_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_country}  r-vertical-field" 
+	data-signal-error-for="country{$id}" {$required_attr_country}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="country" data-fieldname="country" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_country}">
+		{BEGIN country_label}{$label contacts country }{END country_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$country_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="country" {$tooltipAttr contacts country } >
+		<div class="text-muted" >
+		{$tooltip contacts country }		</div>
+	</div>
+</div>
+
+
+{END country_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Sauvegarder			</a>
+</span>
+	 
+		<span data-itemtype="add_reset" data-itemid="add_reset" {$item_add_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="resetButton{$id}" >
+							Remettre			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							Retour à la liste			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Annuler			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

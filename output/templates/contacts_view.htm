@@ -1,0 +1,409 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel contacts view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id}  r-vertical-field" data-fieldname="id" data-signal-error-for="id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="id" data-fieldname="id" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id}">
+		
+		{BEGIN id_label}{$label contacts id }{END id_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_value}	</div>
+
+		
+</div>
+
+
+{END id_fieldblock}
+											
+{BEGIN nom_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nom}  r-vertical-field" data-fieldname="nom" data-signal-error-for="nom{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="nom" data-fieldname="nom" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_nom}">
+		
+		{BEGIN nom_label}{$label contacts nom }{END nom_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$nom_value}	</div>
+
+		
+</div>
+
+
+{END nom_fieldblock}
+											
+{BEGIN Prenom_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Prenom}  r-vertical-field" data-fieldname="Prenom" data-signal-error-for="Prenom{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="Prenom" data-fieldname="Prenom" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Prenom}">
+		
+		{BEGIN Prenom_label}{$label contacts Prenom }{END Prenom_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Prenom_value}	</div>
+
+		
+</div>
+
+
+{END Prenom_fieldblock}
+											
+{BEGIN personne_physique_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_personne_physique}  r-vertical-field" data-fieldname="personne_physique" data-signal-error-for="personne_physique{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="personne_physique" data-fieldname="personne_physique" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_personne_physique}">
+		
+		{BEGIN personne_physique_label}{$label contacts personne_physique }{END personne_physique_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$personne_physique_value}	</div>
+
+		
+</div>
+
+
+{END personne_physique_fieldblock}
+											
+{BEGIN adresse_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_adresse}  r-vertical-field" data-fieldname="adresse" data-signal-error-for="adresse{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="adresse" data-fieldname="adresse" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_adresse}">
+		
+		{BEGIN adresse_label}{$label contacts adresse }{END adresse_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$adresse_value}	</div>
+
+		
+</div>
+
+
+{END adresse_fieldblock}
+											
+{BEGIN tel_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tel}  r-vertical-field" data-fieldname="tel" data-signal-error-for="tel{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="tel" data-fieldname="tel" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_tel}">
+		
+		{BEGIN tel_label}{$label contacts tel }{END tel_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$tel_value}	</div>
+
+		
+</div>
+
+
+{END tel_fieldblock}
+											
+{BEGIN email_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_email}  r-vertical-field" data-fieldname="email" data-signal-error-for="email{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="email" data-fieldname="email" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_email}">
+		
+		{BEGIN email_label}{$label contacts email }{END email_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$email_value}	</div>
+
+		
+</div>
+
+
+{END email_fieldblock}
+											
+{BEGIN fax_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fax}  r-vertical-field" data-fieldname="fax" data-signal-error-for="fax{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="fax" data-fieldname="fax" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_fax}">
+		
+		{BEGIN fax_label}{$label contacts fax }{END fax_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$fax_value}	</div>
+
+		
+</div>
+
+
+{END fax_fieldblock}
+											
+{BEGIN adresse2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_adresse2}  r-vertical-field" data-fieldname="adresse2" data-signal-error-for="adresse2{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="adresse2" data-fieldname="adresse2" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_adresse2}">
+		
+		{BEGIN adresse2_label}{$label contacts adresse2 }{END adresse2_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$adresse2_value}	</div>
+
+		
+</div>
+
+
+{END adresse2_fieldblock}
+											
+{BEGIN state_prov_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_state_prov}  r-vertical-field" data-fieldname="state_prov" data-signal-error-for="state_prov{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="state_prov" data-fieldname="state_prov" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_state_prov}">
+		
+		{BEGIN state_prov_label}{$label contacts state_prov }{END state_prov_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$state_prov_value}	</div>
+
+		
+</div>
+
+
+{END state_prov_fieldblock}
+											
+{BEGIN zip_code_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_zip_code}  r-vertical-field" data-fieldname="zip_code" data-signal-error-for="zip_code{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="zip_code" data-fieldname="zip_code" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_zip_code}">
+		
+		{BEGIN zip_code_label}{$label contacts zip_code }{END zip_code_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$zip_code_value}	</div>
+
+		
+</div>
+
+
+{END zip_code_fieldblock}
+											
+{BEGIN city_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_city}  r-vertical-field" data-fieldname="city" data-signal-error-for="city{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="city" data-fieldname="city" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_city}">
+		
+		{BEGIN city_label}{$label contacts city }{END city_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$city_value}	</div>
+
+		
+</div>
+
+
+{END city_fieldblock}
+											
+{BEGIN country_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_country}  r-vertical-field" data-fieldname="country" data-signal-error-for="country{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="country" data-fieldname="country" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_country}">
+		
+		{BEGIN country_label}{$label contacts country }{END country_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$country_value}	</div>
+
+		
+</div>
+
+
+{END country_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Retour à la liste			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Fermer fenêtre			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="contacts_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Editer		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

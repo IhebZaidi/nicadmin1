@@ -1,0 +1,3455 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-list"   
+		>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="250px" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Développer" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{BEGIN menuitems_main}
+<ul data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}"	class="r-menu nav menu-treelike" 
+	data-menulevel="1"
+>
+
+{BEGIN item_children1}
+<li class="
+	{$item_current}">
+<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline data-menu-top >
+	{$item_separator}
+	<span class="r-menu-link r-menu-expanded "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+		<span class="r-menu-collapsed">{$item_collicon}{$item_firstcap}</span>
+	</a>
+{BEGIN item_showchildren2}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="2">
+	{BEGIN item_children2}
+		{BEGIN item_menulink2}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+	</a>
+			{BEGIN item_showchildren3}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="3">
+	{BEGIN item_children3}
+		{BEGIN item_menulink3}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren3}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren3}
+	</span>
+	</a>
+			{BEGIN item_showchildren4}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="4">
+	{BEGIN item_children4}
+		{BEGIN item_menulink4}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren4}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren4}
+	</span>
+	</a>
+			{BEGIN item_showchildren5}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="5">
+	{BEGIN item_children5}
+		{BEGIN item_menulink5}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren5}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren5}
+	</span>
+	</a>
+					</li>
+		{END item_menulink5}
+	{END item_children5}
+</ul>
+{END item_showchildren5}
+		</li>
+		{END item_menulink4}
+	{END item_children4}
+</ul>
+{END item_showchildren4}
+		</li>
+		{END item_menulink3}
+	{END item_children3}
+</ul>
+{END item_showchildren3}
+		</li>
+		{END item_menulink2}
+	{END item_children2}
+</ul>
+{END item_showchildren2}
+</li>
+{END item_children1}
+</ul>
+{END menuitems_main}
+			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}"	 >
+
+	<div class="panel-heading">
+		<div class="btn-group r-sp-addfield" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle btn-sm )" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Chercher dans			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group r-sp-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Montrer options</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>Toutes les conditions</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>Chaque condition</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>Cacher</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_updated_by}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_updated_by}" {$filterRow_attrs_updated_by}>
+			<label>{$label domains updated_by }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_updated_by}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_updated_by}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_updated_by}</span>
+						</div>
+		{END searchCtrlBlock_updated_by}
+																{BEGIN searchCtrlBlock_rubrique}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_rubrique}" {$filterRow_attrs_rubrique}>
+			<label>{$label domains rubrique }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_rubrique}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_rubrique}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_rubrique}</span>
+						</div>
+		{END searchCtrlBlock_rubrique}
+																{BEGIN searchCtrlBlock_private}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_private}" {$filterRow_attrs_private}>
+			<label>{$label domains private }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_private}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_private}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_private}</span>
+						</div>
+		{END searchCtrlBlock_private}
+																{BEGIN searchCtrlBlock_last_status}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_last_status}" {$filterRow_attrs_last_status}>
+			<label>{$label domains last_status }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_last_status}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_last_status}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_last_status}</span>
+						</div>
+		{END searchCtrlBlock_last_status}
+																{BEGIN searchCtrlBlock_id_fsi_in}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id_fsi_in}" {$filterRow_attrs_id_fsi_in}>
+			<label>{$label domains id_fsi_in }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id_fsi_in}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id_fsi_in}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id_fsi_in}</span>
+						</div>
+		{END searchCtrlBlock_id_fsi_in}
+																{BEGIN searchCtrlBlock_fsi}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_fsi}" {$filterRow_attrs_fsi}>
+			<label>{$label domains fsi }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_fsi}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_fsi}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_fsi}</span>
+						</div>
+		{END searchCtrlBlock_fsi}
+																{BEGIN searchCtrlBlock_ext}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ext}" {$filterRow_attrs_ext}>
+			<label>{$label domains ext }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ext}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ext}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ext}</span>
+						</div>
+		{END searchCtrlBlock_ext}
+																{BEGIN searchCtrlBlock_etat}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_etat}" {$filterRow_attrs_etat}>
+			<label>{$label domains etat }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_etat}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_etat}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_etat}</span>
+						</div>
+		{END searchCtrlBlock_etat}
+																{BEGIN searchCtrlBlock_domainidn}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_domainidn}" {$filterRow_attrs_domainidn}>
+			<label>{$label domains domainidn }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_domainidn}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_domainidn}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_domainidn}</span>
+						</div>
+		{END searchCtrlBlock_domainidn}
+																{BEGIN searchCtrlBlock_domain_pw}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_domain_pw}" {$filterRow_attrs_domain_pw}>
+			<label>{$label domains domain_pw }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_domain_pw}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_domain_pw}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_domain_pw}</span>
+						</div>
+		{END searchCtrlBlock_domain_pw}
+																{BEGIN searchCtrlBlock_domain}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_domain}" {$filterRow_attrs_domain}>
+			<label>{$label domains domain }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_domain}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_domain}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_domain}</span>
+						</div>
+		{END searchCtrlBlock_domain}
+																{BEGIN searchCtrlBlock_date_unblocked}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_date_unblocked}" {$filterRow_attrs_date_unblocked}>
+			<label>{$label domains date_unblocked }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_date_unblocked}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_date_unblocked}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_date_unblocked}</span>
+						</div>
+		{END searchCtrlBlock_date_unblocked}
+																{BEGIN searchCtrlBlock_date_transfer_req}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_date_transfer_req}" {$filterRow_attrs_date_transfer_req}>
+			<label>{$label domains date_transfer_req }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_date_transfer_req}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_date_transfer_req}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_date_transfer_req}</span>
+						</div>
+		{END searchCtrlBlock_date_transfer_req}
+																{BEGIN searchCtrlBlock_date_transfer_rejected}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_date_transfer_rejected}" {$filterRow_attrs_date_transfer_rejected}>
+			<label>{$label domains date_transfer_rejected }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_date_transfer_rejected}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_date_transfer_rejected}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_date_transfer_rejected}</span>
+						</div>
+		{END searchCtrlBlock_date_transfer_rejected}
+																{BEGIN searchCtrlBlock_date_transfer_due}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_date_transfer_due}" {$filterRow_attrs_date_transfer_due}>
+			<label>{$label domains date_transfer_due }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_date_transfer_due}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_date_transfer_due}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_date_transfer_due}</span>
+						</div>
+		{END searchCtrlBlock_date_transfer_due}
+																{BEGIN searchCtrlBlock_date_transfer_canceled}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_date_transfer_canceled}" {$filterRow_attrs_date_transfer_canceled}>
+			<label>{$label domains date_transfer_canceled }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_date_transfer_canceled}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_date_transfer_canceled}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_date_transfer_canceled}</span>
+						</div>
+		{END searchCtrlBlock_date_transfer_canceled}
+																{BEGIN searchCtrlBlock_date_transfer_accepted}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_date_transfer_accepted}" {$filterRow_attrs_date_transfer_accepted}>
+			<label>{$label domains date_transfer_accepted }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_date_transfer_accepted}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_date_transfer_accepted}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_date_transfer_accepted}</span>
+						</div>
+		{END searchCtrlBlock_date_transfer_accepted}
+																{BEGIN searchCtrlBlock_date_recept}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_date_recept}" {$filterRow_attrs_date_recept}>
+			<label>{$label domains date_recept }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_date_recept}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_date_recept}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_date_recept}</span>
+						</div>
+		{END searchCtrlBlock_date_recept}
+																{BEGIN searchCtrlBlock_date_modif}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_date_modif}" {$filterRow_attrs_date_modif}>
+			<label>{$label domains date_modif }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_date_modif}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_date_modif}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_date_modif}</span>
+						</div>
+		{END searchCtrlBlock_date_modif}
+																{BEGIN searchCtrlBlock_date_blocked_max}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_date_blocked_max}" {$filterRow_attrs_date_blocked_max}>
+			<label>{$label domains date_blocked_max }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_date_blocked_max}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_date_blocked_max}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_date_blocked_max}</span>
+						</div>
+		{END searchCtrlBlock_date_blocked_max}
+																{BEGIN searchCtrlBlock_date_blocked}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_date_blocked}" {$filterRow_attrs_date_blocked}>
+			<label>{$label domains date_blocked }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_date_blocked}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_date_blocked}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_date_blocked}</span>
+						</div>
+		{END searchCtrlBlock_date_blocked}
+																{BEGIN searchCtrlBlock_date_annul_req}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_date_annul_req}" {$filterRow_attrs_date_annul_req}>
+			<label>{$label domains date_annul_req }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_date_annul_req}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_date_annul_req}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_date_annul_req}</span>
+						</div>
+		{END searchCtrlBlock_date_annul_req}
+																{BEGIN searchCtrlBlock_date_annul_due}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_date_annul_due}" {$filterRow_attrs_date_annul_due}>
+			<label>{$label domains date_annul_due }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_date_annul_due}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_date_annul_due}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_date_annul_due}</span>
+						</div>
+		{END searchCtrlBlock_date_annul_due}
+																{BEGIN searchCtrlBlock_date_annul}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_date_annul}" {$filterRow_attrs_date_annul}>
+			<label>{$label domains date_annul }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_date_annul}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_date_annul}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_date_annul}</span>
+						</div>
+		{END searchCtrlBlock_date_annul}
+																{BEGIN searchCtrlBlock_date_activ}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_date_activ}" {$filterRow_attrs_date_activ}>
+			<label>{$label domains date_activ }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_date_activ}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_date_activ}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_date_activ}</span>
+						</div>
+		{END searchCtrlBlock_date_activ}
+																{BEGIN searchCtrlBlock_date_accept}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_date_accept}" {$filterRow_attrs_date_accept}>
+			<label>{$label domains date_accept }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_date_accept}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_date_accept}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_date_accept}</span>
+						</div>
+		{END searchCtrlBlock_date_accept}
+																{BEGIN searchCtrlBlock_commentaire}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_commentaire}" {$filterRow_attrs_commentaire}>
+			<label>{$label domains commentaire }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_commentaire}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_commentaire}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_commentaire}</span>
+						</div>
+		{END searchCtrlBlock_commentaire}
+																{BEGIN searchCtrlBlock_code}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_code}" {$filterRow_attrs_code}>
+			<label>{$label domains code }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_code}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_code}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_code}</span>
+						</div>
+		{END searchCtrlBlock_code}
+																{BEGIN searchCtrlBlock_blocked_by}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_blocked_by}" {$filterRow_attrs_blocked_by}>
+			<label>{$label domains blocked_by }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_blocked_by}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_blocked_by}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_blocked_by}</span>
+						</div>
+		{END searchCtrlBlock_blocked_by}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary btn-sm" id="searchButton{$id}" {$searchbutton_attrs}>Rechercher</button>
+
+				<button class="btn btn-default btn-sm" {$showAllCont_attrs} {$showallbutton_attrs}>Montrer tout</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div data-resize-left="leftbar"  data-fixed class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="expand_menu_button" {$item_expand_menu_button} data-topcell-item-type="expand_menu_button" >
+				<span data-itemtype="expand_menu_button" data-itemid="expand_menu_button" {$item_expand_menu_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Afficher le menu" class="btn-link   
+	 glyphicon glyphicon-menu-hamburger" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Réduire" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="breadcrumb" {$item_breadcrumb} data-topcell-item-type="breadcrumb" >
+				{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+				<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Montrer tout">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-cog"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN exportselected_link}
+	<li data-itemtype="export_selected" data-itemid="export_selected" {$item_export_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}  title="" >
+				
+		Exporter la sélection		
+		</a>
+	</li>
+{END exportselected_link}
+							{BEGIN deleteselected_link}
+	<li data-itemtype="delete_selected" data-itemid="delete_selected" {$item_delete_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}  title="" >
+				
+		Supprimer enregistrements sélectionnés		
+		</a>
+	</li>
+{END deleteselected_link}
+							<li role="separator" class="divider"></li>								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="domains_search.php{$stateLink_full}" {$advsearchlink_attrs}  title="" >
+				
+		Recherche avancée		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Afficher le panneau de recherche		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Cacher le panneau de recherche		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							<li role="separator" class="divider"></li>							{BEGIN export_link}
+	<li data-itemtype="export" data-itemid="export" {$item_export} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportlink_attrs}  title="" >
+				
+		Exporter résultats		
+		</a>
+	</li>
+{END export_link}
+							<li role="separator" class="divider"></li>							{BEGIN import_link}
+	<li data-itemtype="import" data-itemid="import" {$item_import} data-pageid="{$pageid}" data-small >
+				<a  {$importlink_attrs} href="domains_import.php{$stateLink_full}"  title="" >
+				
+		Importer		
+		</a>
+	</li>
+{END import_link}
+							<li role="separator" class="divider"></li>					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Ouverture de session			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN userinfo_link}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		Profil de l'utilisateur		
+		</a>
+	</li>
+{END userinfo_link}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Fin de session		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN changepwd_link}
+	<li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" data-small >
+				<a  href="changepwd.php" {$changepwdlink_attrs} id="changePasswordButton{$id}"  title="" >
+				
+		Changer le mot de passe		
+		</a>
+	</li>
+{END changepwd_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+			</div>					</div>
+			</div>		
+{END top_block}
+						</div>
+											<div class="r-above">
+					{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class="			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN add_link}
+<span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$addlink_attrs} href="domains_add.php{$stateLink_full}" >
+							Ajouter			</a>
+</span>
+{END add_link}
+	 
+		{BEGIN deleteselected_link}
+<span data-itemtype="delete" data-itemid="delete" {$item_delete} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled >
+							Supprimer			</a>
+</span>
+{END deleteselected_link}
+			{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$mlp_push}{$mlparam first var first_shown}{$mlparam last var last_shown}{$mlparam total var records_found}{mlang_message DISPLAYING}{$mlp_pop}</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>	 
+		{BEGIN print_friendly}
+<span id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+	<button title="Page imprimable" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				 
+					<li class="container-fluid 
+										">
+									<div id="print_friendly_scope{$id}">
+	<div class="row">
+		<div class="col-md-4">
+			Portée:		</div>
+
+			 
+		{BEGIN print_friendly_all}
+		<div class="col-md-8">
+			<label for="printAll{$id}">
+				<input type="radio" id="printAll{$id}" data-href="domains_print.php?all=1&amp;{$crosstable_attrs}" name="printScope" >
+									Imprimer toutes les pages							</label>
+		</div>
+		{END print_friendly_all}
+		</div>
+		<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-8">
+			<label for="printPage{$id}">
+				<input name="printScope" id="printPage{$id}" type="radio" checked data-href="domains_print.php?{$crosstable_attrs}">
+				Imprimer cette page			</label>
+		</div>
+	</div>
+		
+		 
+	<div class="row">
+		<div class="col-md-4">
+			&nbsp;
+		</div>
+		<div class="col-md-8">
+			<label style="color: gray;" for="printSelection{$id}">
+			<input name="printScope" disabled="disabled" id="printSelection{$id}" type="radio" >
+			Imprimer la sélection			</label>
+		</div>
+	</div>
+	</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									{BEGIN print_details}
+<div>
+	<label for="printDetailsToggler{$id}">
+		<input type="checkbox" id="printDetailsToggler{$id}">
+		Imprimer les détails	</label>
+	<div  id="printdetailstables{$id}" style="display:none;">
+											{BEGIN print_details_nameservers}
+			<div>
+				<label for="printDetailsnameservers{$id}">
+					<input type="checkbox" value="nameservers" id="printDetailsnameservers{$id}" checked>
+					Nameservers				</label>
+			</div>
+			{END print_details_nameservers}
+														{BEGIN print_details_domain_contacts}
+			<div>
+				<label for="printDetailsdomain_contacts{$id}">
+					<input type="checkbox" value="domain_contacts" id="printDetailsdomain_contacts{$id}" checked>
+					Domain Contacts				</label>
+			</div>
+			{END print_details_domain_contacts}
+						</div>
+</div>
+{END print_details}
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									<div>
+	<label for="printPerPage{$id}">
+					Enregistrements par page							
+	</label>
+	<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+					 text-center 					">
+									<span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" id="print_friendly_button{$id}" >
+							Imprimer			</a>
+</span>
+				 
+					</li>
+															</ul>
+</span>
+{END print_friendly}
+		</div>					</div>
+			</div>		
+{END above-grid_block}
+	</div>
+<div class="r-grid">
+	{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+					{BEGIN grid_block}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}	<style>
+@media screen and (max-width: 767px) {
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="code"]:before {
+		content: "{$label domains code}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="domain"]:before {
+		content: "{$label domains domain}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="domainidn"]:before {
+		content: "{$label domains domainidn}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="ext"]:before {
+		content: "{$label domains ext}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="fsi"]:before {
+		content: "{$label domains fsi}";
+	}
+										[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="rubrique"]:before {
+		content: "{$label domains rubrique}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="date_recept"]:before {
+		content: "{$label domains date_recept}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="date_accept"]:before {
+		content: "{$label domains date_accept}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="date_activ"]:before {
+		content: "{$label domains date_activ}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="date_modif"]:before {
+		content: "{$label domains date_modif}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="date_annul"]:before {
+		content: "{$label domains date_annul}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="date_annul_due"]:before {
+		content: "{$label domains date_annul_due}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="etat"]:before {
+		content: "{$label domains etat}";
+	}
+				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="commentaire"]:before {
+		content: "{$label domains commentaire}";
+	}
+				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="id_fsi_in"]:before {
+		content: "{$label domains id_fsi_in}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="domain_pw"]:before {
+		content: "{$label domains domain_pw}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="date_blocked"]:before {
+		content: "{$label domains date_blocked}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="date_blocked_max"]:before {
+		content: "{$label domains date_blocked_max}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="blocked_by"]:before {
+		content: "{$label domains blocked_by}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="date_unblocked"]:before {
+		content: "{$label domains date_unblocked}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="date_transfer_req"]:before {
+		content: "{$label domains date_transfer_req}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="date_transfer_due"]:before {
+		content: "{$label domains date_transfer_due}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="date_transfer_canceled"]:before {
+		content: "{$label domains date_transfer_canceled}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="date_transfer_accepted"]:before {
+		content: "{$label domains date_transfer_accepted}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="date_transfer_rejected"]:before {
+		content: "{$label domains date_transfer_rejected}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="date_annul_req"]:before {
+		content: "{$label domains date_annul_req}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="last_status"]:before {
+		content: "{$label domains last_status}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="updated_by"]:before {
+		content: "{$label domains updated_by}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="private"]:before {
+		content: "{$label domains private}";
+	}
+											}
+</style>
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table table-striped table-bordered r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable"
+	cellpadding="0"
+	data-body-height="2"
+>
+						<thead>
+			{BEGIN grid_header}
+			
+																														<tr {$rowattrs} {$row_grid_0} class="{$rowclass}
+									{$gridHeader_class}
+					
+								r-gridrow
+							">
+									{BEGIN cellblock_grid_headcell_icons}
+	<th
+	
+	{$cell_grid_headcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"		data-control-cell
+	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_icons}
+									{BEGIN cellblock_grid_headcell_checkbox}
+	<th
+	
+	{$cell_grid_headcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox_head" data-itemid="grid_checkbox_head" {$item_grid_checkbox_head} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkboxheader_attrs}>
+</span>
+{END checkbox_column}
+	
+	</th>
+	{END cellblock_grid_headcell_checkbox}
+									{BEGIN cellblock_grid_headcell_details}
+	<th
+	
+	{$cell_grid_headcell_details}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_details" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_details}
+									{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$code_class}	"
+
+			data-field="code"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN code_fieldheadercolumn}
+	{BEGIN code_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="code" data-fieldname="code" 
+
+			{$code_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains code }</span>
+					{$arrow_icon_code}
+			</span>
+	</span>
+	{END code_fieldheader}
+{END code_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+									{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$domain_class}	"
+
+			data-field="domain"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN domain_fieldheadercolumn}
+	{BEGIN domain_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="domain" data-fieldname="domain" 
+
+			{$domain_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains domain }</span>
+					{$arrow_icon_domain}
+			</span>
+	</span>
+	{END domain_fieldheader}
+{END domain_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+									{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$domainidn_class}	"
+
+			data-field="domainidn"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN domainidn_fieldheadercolumn}
+	{BEGIN domainidn_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="domainidn" data-fieldname="domainidn" 
+
+			{$domainidn_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains domainidn }</span>
+					{$arrow_icon_domainidn}
+			</span>
+	</span>
+	{END domainidn_fieldheader}
+{END domainidn_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+									{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$ext_class}	"
+
+			data-field="ext"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ext_fieldheadercolumn}
+	{BEGIN ext_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ext" data-fieldname="ext" 
+
+			{$ext_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains ext }</span>
+					{$arrow_icon_ext}
+			</span>
+	</span>
+	{END ext_fieldheader}
+{END ext_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+									{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$fsi_class}	"
+
+			data-field="fsi"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN fsi_fieldheadercolumn}
+	{BEGIN fsi_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fsi" data-fieldname="fsi" 
+
+			{$fsi_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains fsi }</span>
+					{$arrow_icon_fsi}
+			</span>
+	</span>
+	{END fsi_fieldheader}
+{END fsi_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+									{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$rubrique_class}	"
+
+			data-field="rubrique"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN rubrique_fieldheadercolumn}
+	{BEGIN rubrique_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="rubrique" data-fieldname="rubrique" 
+
+			{$rubrique_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains rubrique }</span>
+					{$arrow_icon_rubrique}
+			</span>
+	</span>
+	{END rubrique_fieldheader}
+{END rubrique_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+									{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_recept_class}	"
+
+			data-field="date_recept"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_recept_fieldheadercolumn}
+	{BEGIN date_recept_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_recept" data-fieldname="date_recept" 
+
+			{$date_recept_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains date_recept }</span>
+					{$arrow_icon_date_recept}
+			</span>
+	</span>
+	{END date_recept_fieldheader}
+{END date_recept_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+									{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_accept_class}	"
+
+			data-field="date_accept"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_accept_fieldheadercolumn}
+	{BEGIN date_accept_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field39" {$item_simple_grid_field39} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_accept" data-fieldname="date_accept" 
+
+			{$date_accept_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains date_accept }</span>
+					{$arrow_icon_date_accept}
+			</span>
+	</span>
+	{END date_accept_fieldheader}
+{END date_accept_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+									{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_activ_class}	"
+
+			data-field="date_activ"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_activ_fieldheadercolumn}
+	{BEGIN date_activ_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field40" {$item_simple_grid_field40} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_activ" data-fieldname="date_activ" 
+
+			{$date_activ_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains date_activ }</span>
+					{$arrow_icon_date_activ}
+			</span>
+	</span>
+	{END date_activ_fieldheader}
+{END date_activ_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+									{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_modif_class}	"
+
+			data-field="date_modif"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_modif_fieldheadercolumn}
+	{BEGIN date_modif_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field41" {$item_simple_grid_field41} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_modif" data-fieldname="date_modif" 
+
+			{$date_modif_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains date_modif }</span>
+					{$arrow_icon_date_modif}
+			</span>
+	</span>
+	{END date_modif_fieldheader}
+{END date_modif_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
+									{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_annul_class}	"
+
+			data-field="date_annul"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_annul_fieldheadercolumn}
+	{BEGIN date_annul_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field42" {$item_simple_grid_field42} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_annul" data-fieldname="date_annul" 
+
+			{$date_annul_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains date_annul }</span>
+					{$arrow_icon_date_annul}
+			</span>
+	</span>
+	{END date_annul_fieldheader}
+{END date_annul_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+									{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_annul_due_class}	"
+
+			data-field="date_annul_due"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_annul_due_fieldheadercolumn}
+	{BEGIN date_annul_due_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field43" {$item_simple_grid_field43} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_annul_due" data-fieldname="date_annul_due" 
+
+			{$date_annul_due_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains date_annul_due }</span>
+					{$arrow_icon_date_annul_due}
+			</span>
+	</span>
+	{END date_annul_due_fieldheader}
+{END date_annul_due_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
+									{BEGIN cellblock_grid_headcell_field12}
+	<th
+	
+	{$cell_grid_headcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$etat_class}	"
+
+			data-field="etat"
+	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN etat_fieldheadercolumn}
+	{BEGIN etat_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field44" {$item_simple_grid_field44} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="etat" data-fieldname="etat" 
+
+			{$etat_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains etat }</span>
+					{$arrow_icon_etat}
+			</span>
+	</span>
+	{END etat_fieldheader}
+{END etat_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field12}
+									{BEGIN cellblock_grid_headcell_field13}
+	<th
+	
+	{$cell_grid_headcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$commentaire_class}	"
+
+			data-field="commentaire"
+	
+	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN commentaire_fieldheadercolumn}
+	{BEGIN commentaire_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field45" {$item_simple_grid_field45} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="commentaire" data-fieldname="commentaire" 
+
+			{$commentaire_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains commentaire }</span>
+					{$arrow_icon_commentaire}
+			</span>
+	</span>
+	{END commentaire_fieldheader}
+{END commentaire_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field13}
+									{BEGIN cellblock_grid_headcell_field14}
+	<th
+	
+	{$cell_grid_headcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$id_fsi_in_class}	"
+
+			data-field="id_fsi_in"
+	
+	data-cellId="grid_headcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_fsi_in_fieldheadercolumn}
+	{BEGIN id_fsi_in_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field46" {$item_simple_grid_field46} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_fsi_in" data-fieldname="id_fsi_in" 
+
+			{$id_fsi_in_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains id_fsi_in }</span>
+					{$arrow_icon_id_fsi_in}
+			</span>
+	</span>
+	{END id_fsi_in_fieldheader}
+{END id_fsi_in_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field14}
+									{BEGIN cellblock_grid_headcell_field15}
+	<th
+	
+	{$cell_grid_headcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$domain_pw_class}	"
+
+			data-field="domain_pw"
+	
+	data-cellId="grid_headcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN domain_pw_fieldheadercolumn}
+	{BEGIN domain_pw_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field47" {$item_simple_grid_field47} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="domain_pw" data-fieldname="domain_pw" 
+
+			{$domain_pw_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains domain_pw }</span>
+					{$arrow_icon_domain_pw}
+			</span>
+	</span>
+	{END domain_pw_fieldheader}
+{END domain_pw_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field15}
+									{BEGIN cellblock_grid_headcell_field16}
+	<th
+	
+	{$cell_grid_headcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_blocked_class}	"
+
+			data-field="date_blocked"
+	
+	data-cellId="grid_headcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_blocked_fieldheadercolumn}
+	{BEGIN date_blocked_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field48" {$item_simple_grid_field48} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_blocked" data-fieldname="date_blocked" 
+
+			{$date_blocked_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains date_blocked }</span>
+					{$arrow_icon_date_blocked}
+			</span>
+	</span>
+	{END date_blocked_fieldheader}
+{END date_blocked_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field16}
+									{BEGIN cellblock_grid_headcell_field17}
+	<th
+	
+	{$cell_grid_headcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_blocked_max_class}	"
+
+			data-field="date_blocked_max"
+	
+	data-cellId="grid_headcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_blocked_max_fieldheadercolumn}
+	{BEGIN date_blocked_max_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field49" {$item_simple_grid_field49} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_blocked_max" data-fieldname="date_blocked_max" 
+
+			{$date_blocked_max_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains date_blocked_max }</span>
+					{$arrow_icon_date_blocked_max}
+			</span>
+	</span>
+	{END date_blocked_max_fieldheader}
+{END date_blocked_max_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field17}
+									{BEGIN cellblock_grid_headcell_field18}
+	<th
+	
+	{$cell_grid_headcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$blocked_by_class}	"
+
+			data-field="blocked_by"
+	
+	data-cellId="grid_headcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN blocked_by_fieldheadercolumn}
+	{BEGIN blocked_by_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field50" {$item_simple_grid_field50} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="blocked_by" data-fieldname="blocked_by" 
+
+			{$blocked_by_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains blocked_by }</span>
+					{$arrow_icon_blocked_by}
+			</span>
+	</span>
+	{END blocked_by_fieldheader}
+{END blocked_by_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field18}
+									{BEGIN cellblock_grid_headcell_field19}
+	<th
+	
+	{$cell_grid_headcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_unblocked_class}	"
+
+			data-field="date_unblocked"
+	
+	data-cellId="grid_headcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_unblocked_fieldheadercolumn}
+	{BEGIN date_unblocked_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field51" {$item_simple_grid_field51} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_unblocked" data-fieldname="date_unblocked" 
+
+			{$date_unblocked_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains date_unblocked }</span>
+					{$arrow_icon_date_unblocked}
+			</span>
+	</span>
+	{END date_unblocked_fieldheader}
+{END date_unblocked_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field19}
+									{BEGIN cellblock_grid_headcell_field20}
+	<th
+	
+	{$cell_grid_headcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_transfer_req_class}	"
+
+			data-field="date_transfer_req"
+	
+	data-cellId="grid_headcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_transfer_req_fieldheadercolumn}
+	{BEGIN date_transfer_req_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field52" {$item_simple_grid_field52} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_transfer_req" data-fieldname="date_transfer_req" 
+
+			{$date_transfer_req_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains date_transfer_req }</span>
+					{$arrow_icon_date_transfer_req}
+			</span>
+	</span>
+	{END date_transfer_req_fieldheader}
+{END date_transfer_req_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field20}
+									{BEGIN cellblock_grid_headcell_field21}
+	<th
+	
+	{$cell_grid_headcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_transfer_due_class}	"
+
+			data-field="date_transfer_due"
+	
+	data-cellId="grid_headcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_transfer_due_fieldheadercolumn}
+	{BEGIN date_transfer_due_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field53" {$item_simple_grid_field53} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_transfer_due" data-fieldname="date_transfer_due" 
+
+			{$date_transfer_due_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains date_transfer_due }</span>
+					{$arrow_icon_date_transfer_due}
+			</span>
+	</span>
+	{END date_transfer_due_fieldheader}
+{END date_transfer_due_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field21}
+									{BEGIN cellblock_grid_headcell_field22}
+	<th
+	
+	{$cell_grid_headcell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_transfer_canceled_class}	"
+
+			data-field="date_transfer_canceled"
+	
+	data-cellId="grid_headcell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_transfer_canceled_fieldheadercolumn}
+	{BEGIN date_transfer_canceled_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field54" {$item_simple_grid_field54} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_transfer_canceled" data-fieldname="date_transfer_canceled" 
+
+			{$date_transfer_canceled_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains date_transfer_canceled }</span>
+					{$arrow_icon_date_transfer_canceled}
+			</span>
+	</span>
+	{END date_transfer_canceled_fieldheader}
+{END date_transfer_canceled_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field22}
+									{BEGIN cellblock_grid_headcell_field23}
+	<th
+	
+	{$cell_grid_headcell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_transfer_accepted_class}	"
+
+			data-field="date_transfer_accepted"
+	
+	data-cellId="grid_headcell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_transfer_accepted_fieldheadercolumn}
+	{BEGIN date_transfer_accepted_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field55" {$item_simple_grid_field55} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_transfer_accepted" data-fieldname="date_transfer_accepted" 
+
+			{$date_transfer_accepted_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains date_transfer_accepted }</span>
+					{$arrow_icon_date_transfer_accepted}
+			</span>
+	</span>
+	{END date_transfer_accepted_fieldheader}
+{END date_transfer_accepted_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field23}
+									{BEGIN cellblock_grid_headcell_field24}
+	<th
+	
+	{$cell_grid_headcell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_transfer_rejected_class}	"
+
+			data-field="date_transfer_rejected"
+	
+	data-cellId="grid_headcell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_transfer_rejected_fieldheadercolumn}
+	{BEGIN date_transfer_rejected_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field56" {$item_simple_grid_field56} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_transfer_rejected" data-fieldname="date_transfer_rejected" 
+
+			{$date_transfer_rejected_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains date_transfer_rejected }</span>
+					{$arrow_icon_date_transfer_rejected}
+			</span>
+	</span>
+	{END date_transfer_rejected_fieldheader}
+{END date_transfer_rejected_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field24}
+									{BEGIN cellblock_grid_headcell_field25}
+	<th
+	
+	{$cell_grid_headcell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_annul_req_class}	"
+
+			data-field="date_annul_req"
+	
+	data-cellId="grid_headcell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_annul_req_fieldheadercolumn}
+	{BEGIN date_annul_req_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field57" {$item_simple_grid_field57} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_annul_req" data-fieldname="date_annul_req" 
+
+			{$date_annul_req_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains date_annul_req }</span>
+					{$arrow_icon_date_annul_req}
+			</span>
+	</span>
+	{END date_annul_req_fieldheader}
+{END date_annul_req_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field25}
+									{BEGIN cellblock_grid_headcell_field26}
+	<th
+	
+	{$cell_grid_headcell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$last_status_class}	"
+
+			data-field="last_status"
+	
+	data-cellId="grid_headcell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN last_status_fieldheadercolumn}
+	{BEGIN last_status_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field58" {$item_simple_grid_field58} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="last_status" data-fieldname="last_status" 
+
+			{$last_status_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains last_status }</span>
+					{$arrow_icon_last_status}
+			</span>
+	</span>
+	{END last_status_fieldheader}
+{END last_status_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field26}
+									{BEGIN cellblock_grid_headcell_field27}
+	<th
+	
+	{$cell_grid_headcell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$updated_by_class}	"
+
+			data-field="updated_by"
+	
+	data-cellId="grid_headcell_field27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN updated_by_fieldheadercolumn}
+	{BEGIN updated_by_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field59" {$item_simple_grid_field59} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="updated_by" data-fieldname="updated_by" 
+
+			{$updated_by_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains updated_by }</span>
+					{$arrow_icon_updated_by}
+			</span>
+	</span>
+	{END updated_by_fieldheader}
+{END updated_by_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field27}
+									{BEGIN cellblock_grid_headcell_field28}
+	<th
+	
+	{$cell_grid_headcell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$private_class}	"
+
+			data-field="private"
+	
+	data-cellId="grid_headcell_field28" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN private_fieldheadercolumn}
+	{BEGIN private_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field60" {$item_simple_grid_field60} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="private" data-fieldname="private" 
+
+			{$private_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label domains private }</span>
+					{$arrow_icon_private}
+			</span>
+	</span>
+	{END private_fieldheader}
+{END private_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field28}
+							</tr>
+																				
+					{END grid_header}
+			</thead>
+															<tbody>
+					{BEGIN grid_row}
+							
+																																			<tr {$rowattrs} {$row_grid_1} class="{$rowclass}
+				
+								r-gridrow
+							">
+									{BEGIN cellblock_grid_cell_icons}
+	<td
+	
+	{$cell_grid_cell_icons}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN edit_column}
+{BEGIN edit_link}
+<span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Editer" class="btn-link   
+	 glyphicon glyphicon-pencil" href="domains_edit.php?{$editlink}" {$editlink_attrs} title="Editer" >		
+				
+								</a>
+</span>
+{END edit_link}
+{END edit_column}
+	 
+		{BEGIN view_column}
+{BEGIN view_link}
+<span data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Afficher l'enregistrement" class="btn-link   
+	 glyphicon glyphicon-search" href="domains_view.php?{$editlink}" {$viewlink_attrs} title="Afficher" >		
+				
+								</a>
+</span>
+{END view_link}
+{END view_column}
+	
+	</td>
+	{END cellblock_grid_cell_icons}
+									{BEGIN cellblock_grid_cell_checkbox}
+	<td
+	
+	{$cell_grid_cell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"		data-control-cell
+	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox" data-itemid="grid_checkbox" {$item_grid_checkbox} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkbox_attrs}
+		>
+</span>	
+{END checkbox_column}
+	
+	</td>
+	{END cellblock_grid_cell_checkbox}
+									{BEGIN cellblock_grid_cell_details}
+	<td
+	
+	{$cell_grid_cell_details}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_details" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN dtables_link}
+	<a 
+		data-itemtype="grid_alldetails_link" data-itemid="grid_alldetails_link" {$item_grid_alldetails_link} data-pageid="{$pageid}" data-record-id="{$recId}" 
+		{$dtables_link_attrs} 
+		class="{$dtables_link_class}" 
+		title="Afficher le détail"
+				
+	>
+					<span class="glyphicon glyphicon-th-list"></span>
+					</a>
+{END dtables_link}
+	 
+		
+		
+	{BEGIN nameservers_dtable_link}
+	<span data-itemtype="grid_details_link" data-itemid="grid_details_link" {$item_grid_details_link} data-pageid="{$pageid}" data-record-id="{$recId}">
+	<a  {$nameservers_link_attrs} data-short-details="nameservers"
+		class="{$nameservers_dlink_class}" 
+		title="{$caption nameservers }"			>
+								
+									{BEGIN nameservers_childcount}
+				<span class="details-badge badge nameservers_badge" {$nameservers_childnumber_attr}>
+					{$nameservers_childnumber}				
+				</span>
+				{END nameservers_childcount}
+						</a>
+	</span>
+	{END nameservers_dtable_link}
+
+
+	 
+		
+		
+	{BEGIN domain_contacts_dtable_link}
+	<span data-itemtype="grid_details_link" data-itemid="grid_details_link1" {$item_grid_details_link1} data-pageid="{$pageid}" data-record-id="{$recId}">
+	<a  {$domain_contacts_link_attrs} data-short-details="domain_contacts"
+		class="{$domain_contacts_dlink_class}" 
+		title="{$caption domain_contacts }"			>
+								
+									{BEGIN domain_contacts_childcount}
+				<span class="details-badge badge domain_contacts_badge" {$domain_contacts_childnumber_attr}>
+					{$domain_contacts_childnumber}				
+				</span>
+				{END domain_contacts_childcount}
+						</a>
+	</span>
+	{END domain_contacts_dtable_link}
+
+
+	
+	</td>
+	{END cellblock_grid_cell_details}
+									{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$code_class}	"
+
+			data-field="code"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN code_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="code" data-fieldname="code" data-default-width >
+{$code_value}
+</span>
+{END code_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+									{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$domain_class}	"
+
+			data-field="domain"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN domain_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="domain" data-fieldname="domain" data-default-width >
+{$domain_value}
+</span>
+{END domain_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+									{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$domainidn_class}	"
+
+			data-field="domainidn"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN domainidn_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="domainidn" data-fieldname="domainidn" data-default-width >
+{$domainidn_value}
+</span>
+{END domainidn_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+									{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$ext_class}	"
+
+			data-field="ext"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ext_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ext" data-fieldname="ext" data-default-width >
+{$ext_value}
+</span>
+{END ext_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+									{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$fsi_class}	"
+
+			data-field="fsi"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN fsi_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fsi" data-fieldname="fsi" data-default-width >
+{$fsi_value}
+</span>
+{END fsi_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+									{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$rubrique_class}	"
+
+			data-field="rubrique"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN rubrique_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="rubrique" data-fieldname="rubrique" data-default-width >
+{$rubrique_value}
+</span>
+{END rubrique_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+									{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_recept_class}	"
+
+			data-field="date_recept"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_recept_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_recept" data-fieldname="date_recept" data-default-width >
+{$date_recept_value}
+</span>
+{END date_recept_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+									{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_accept_class}	"
+
+			data-field="date_accept"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_accept_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_accept" data-fieldname="date_accept" data-default-width >
+{$date_accept_value}
+</span>
+{END date_accept_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+									{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_activ_class}	"
+
+			data-field="date_activ"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_activ_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_activ" data-fieldname="date_activ" data-default-width >
+{$date_activ_value}
+</span>
+{END date_activ_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+									{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_modif_class}	"
+
+			data-field="date_modif"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_modif_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_modif" data-fieldname="date_modif" data-default-width >
+{$date_modif_value}
+</span>
+{END date_modif_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+									{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_annul_class}	"
+
+			data-field="date_annul"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_annul_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_annul" data-fieldname="date_annul" data-default-width >
+{$date_annul_value}
+</span>
+{END date_annul_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+									{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_annul_due_class}	"
+
+			data-field="date_annul_due"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_annul_due_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_annul_due" data-fieldname="date_annul_due" data-default-width >
+{$date_annul_due_value}
+</span>
+{END date_annul_due_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+									{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$etat_class}	"
+
+			data-field="etat"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN etat_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="etat" data-fieldname="etat" data-default-width >
+{$etat_value}
+</span>
+{END etat_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+									{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$commentaire_class}	"
+
+			data-field="commentaire"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN commentaire_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="commentaire" data-fieldname="commentaire" data-default-width >
+{$commentaire_value}
+</span>
+{END commentaire_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+									{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$id_fsi_in_class}	"
+
+			data-field="id_fsi_in"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_fsi_in_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_fsi_in" data-fieldname="id_fsi_in" data-default-width >
+{$id_fsi_in_value}
+</span>
+{END id_fsi_in_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field14}
+									{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$domain_pw_class}	"
+
+			data-field="domain_pw"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN domain_pw_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="domain_pw" data-fieldname="domain_pw" data-default-width >
+{$domain_pw_value}
+</span>
+{END domain_pw_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+									{BEGIN cellblock_grid_cell_field16}
+	<td
+	
+	{$cell_grid_cell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_blocked_class}	"
+
+			data-field="date_blocked"
+	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_blocked_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_blocked" data-fieldname="date_blocked" data-default-width >
+{$date_blocked_value}
+</span>
+{END date_blocked_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field16}
+									{BEGIN cellblock_grid_cell_field17}
+	<td
+	
+	{$cell_grid_cell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_blocked_max_class}	"
+
+			data-field="date_blocked_max"
+	
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_blocked_max_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_blocked_max" data-fieldname="date_blocked_max" data-default-width >
+{$date_blocked_max_value}
+</span>
+{END date_blocked_max_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field17}
+									{BEGIN cellblock_grid_cell_field18}
+	<td
+	
+	{$cell_grid_cell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$blocked_by_class}	"
+
+			data-field="blocked_by"
+	
+	data-cellId="grid_cell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN blocked_by_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="blocked_by" data-fieldname="blocked_by" data-default-width >
+{$blocked_by_value}
+</span>
+{END blocked_by_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field18}
+									{BEGIN cellblock_grid_cell_field19}
+	<td
+	
+	{$cell_grid_cell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_unblocked_class}	"
+
+			data-field="date_unblocked"
+	
+	data-cellId="grid_cell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_unblocked_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_unblocked" data-fieldname="date_unblocked" data-default-width >
+{$date_unblocked_value}
+</span>
+{END date_unblocked_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field19}
+									{BEGIN cellblock_grid_cell_field20}
+	<td
+	
+	{$cell_grid_cell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_transfer_req_class}	"
+
+			data-field="date_transfer_req"
+	
+	data-cellId="grid_cell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_transfer_req_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_transfer_req" data-fieldname="date_transfer_req" data-default-width >
+{$date_transfer_req_value}
+</span>
+{END date_transfer_req_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field20}
+									{BEGIN cellblock_grid_cell_field21}
+	<td
+	
+	{$cell_grid_cell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_transfer_due_class}	"
+
+			data-field="date_transfer_due"
+	
+	data-cellId="grid_cell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_transfer_due_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_transfer_due" data-fieldname="date_transfer_due" data-default-width >
+{$date_transfer_due_value}
+</span>
+{END date_transfer_due_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field21}
+									{BEGIN cellblock_grid_cell_field22}
+	<td
+	
+	{$cell_grid_cell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_transfer_canceled_class}	"
+
+			data-field="date_transfer_canceled"
+	
+	data-cellId="grid_cell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_transfer_canceled_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field32" {$item_simple_grid_field32} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_transfer_canceled" data-fieldname="date_transfer_canceled" data-default-width >
+{$date_transfer_canceled_value}
+</span>
+{END date_transfer_canceled_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field22}
+									{BEGIN cellblock_grid_cell_field23}
+	<td
+	
+	{$cell_grid_cell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_transfer_accepted_class}	"
+
+			data-field="date_transfer_accepted"
+	
+	data-cellId="grid_cell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_transfer_accepted_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field33" {$item_simple_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_transfer_accepted" data-fieldname="date_transfer_accepted" data-default-width >
+{$date_transfer_accepted_value}
+</span>
+{END date_transfer_accepted_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field23}
+									{BEGIN cellblock_grid_cell_field24}
+	<td
+	
+	{$cell_grid_cell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_transfer_rejected_class}	"
+
+			data-field="date_transfer_rejected"
+	
+	data-cellId="grid_cell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_transfer_rejected_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field34" {$item_simple_grid_field34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_transfer_rejected" data-fieldname="date_transfer_rejected" data-default-width >
+{$date_transfer_rejected_value}
+</span>
+{END date_transfer_rejected_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field24}
+									{BEGIN cellblock_grid_cell_field25}
+	<td
+	
+	{$cell_grid_cell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_annul_req_class}	"
+
+			data-field="date_annul_req"
+	
+	data-cellId="grid_cell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_annul_req_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field35" {$item_simple_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_annul_req" data-fieldname="date_annul_req" data-default-width >
+{$date_annul_req_value}
+</span>
+{END date_annul_req_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field25}
+									{BEGIN cellblock_grid_cell_field26}
+	<td
+	
+	{$cell_grid_cell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$last_status_class}	"
+
+			data-field="last_status"
+	
+	data-cellId="grid_cell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN last_status_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field36" {$item_simple_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="last_status" data-fieldname="last_status" data-default-width >
+{$last_status_value}
+</span>
+{END last_status_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field26}
+									{BEGIN cellblock_grid_cell_field27}
+	<td
+	
+	{$cell_grid_cell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$updated_by_class}	"
+
+			data-field="updated_by"
+	
+	data-cellId="grid_cell_field27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN updated_by_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field37" {$item_simple_grid_field37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="updated_by" data-fieldname="updated_by" data-default-width >
+{$updated_by_value}
+</span>
+{END updated_by_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field27}
+									{BEGIN cellblock_grid_cell_field28}
+	<td
+	
+	{$cell_grid_cell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$private_class}	"
+
+			data-field="private"
+	
+	data-cellId="grid_cell_field28" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN private_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field38" {$item_simple_grid_field38} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="private" data-fieldname="private" data-default-width >
+{$private_value}
+</span>
+{END private_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field28}
+							</tr>
+											<tr {$rowattrs} {$row_grid_2} class="{$rowclass}
+				
+							">
+									{BEGIN cellblock_grid_cell_dpreview}
+	<td
+	
+	{$cell_grid_cell_dpreview}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_dpreview" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+				<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
+	data-orders="nameservers,domain_contacts"
+			data-details-nameservers			data-details-domain_contacts	>
+		<span data-details-inside data-short-table="nameservers">
+			</span>
+		<span data-details-inside data-short-table="domain_contacts">
+			</span>
+		<div data-details-preview>
+	</div>
+</div>
+	 
+			
+	</td>
+	{END cellblock_grid_cell_dpreview}
+							</tr>
+										
+											{END grid_row}
+					</tbody>
+													<tfoot>
+			
+																																													<tr {$rowattrs} {$row_grid_3} class="{$rowclass}
+									{$gridFooter_class}
+					
+								r-gridrow
+							">
+									{BEGIN cellblock_grid_footcell_icons}
+	<td
+	
+	{$cell_grid_footcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_icons}
+									{BEGIN cellblock_grid_footcell_checkbox}
+	<td
+	
+	{$cell_grid_footcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_checkbox}
+									{BEGIN cellblock_grid_footcell_details}
+	<td
+	
+	{$cell_grid_footcell_details}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_details" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_details}
+									{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$code_class}	"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+									{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$domain_class}	"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+									{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$domainidn_class}	"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+									{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$ext_class}	"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+									{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$fsi_class}	"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+									{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$rubrique_class}	"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+									{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_recept_class}	"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+									{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_accept_class}	"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+									{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_activ_class}	"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+									{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_modif_class}	"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
+									{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_annul_class}	"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+									{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_annul_due_class}	"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
+									{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$etat_class}	"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
+									{BEGIN cellblock_grid_footcell_field13}
+	<td
+	
+	{$cell_grid_footcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$commentaire_class}	"
+
+	
+	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field13}
+									{BEGIN cellblock_grid_footcell_field14}
+	<td
+	
+	{$cell_grid_footcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$id_fsi_in_class}	"
+
+	
+	data-cellId="grid_footcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field14}
+									{BEGIN cellblock_grid_footcell_field15}
+	<td
+	
+	{$cell_grid_footcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$domain_pw_class}	"
+
+	
+	data-cellId="grid_footcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field15}
+									{BEGIN cellblock_grid_footcell_field16}
+	<td
+	
+	{$cell_grid_footcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_blocked_class}	"
+
+	
+	data-cellId="grid_footcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field16}
+									{BEGIN cellblock_grid_footcell_field17}
+	<td
+	
+	{$cell_grid_footcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_blocked_max_class}	"
+
+	
+	data-cellId="grid_footcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field17}
+									{BEGIN cellblock_grid_footcell_field18}
+	<td
+	
+	{$cell_grid_footcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$blocked_by_class}	"
+
+	
+	data-cellId="grid_footcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field18}
+									{BEGIN cellblock_grid_footcell_field19}
+	<td
+	
+	{$cell_grid_footcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_unblocked_class}	"
+
+	
+	data-cellId="grid_footcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field19}
+									{BEGIN cellblock_grid_footcell_field20}
+	<td
+	
+	{$cell_grid_footcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_transfer_req_class}	"
+
+	
+	data-cellId="grid_footcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field20}
+									{BEGIN cellblock_grid_footcell_field21}
+	<td
+	
+	{$cell_grid_footcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_transfer_due_class}	"
+
+	
+	data-cellId="grid_footcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field21}
+									{BEGIN cellblock_grid_footcell_field22}
+	<td
+	
+	{$cell_grid_footcell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_transfer_canceled_class}	"
+
+	
+	data-cellId="grid_footcell_field22" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field22}
+									{BEGIN cellblock_grid_footcell_field23}
+	<td
+	
+	{$cell_grid_footcell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_transfer_accepted_class}	"
+
+	
+	data-cellId="grid_footcell_field23" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field23}
+									{BEGIN cellblock_grid_footcell_field24}
+	<td
+	
+	{$cell_grid_footcell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_transfer_rejected_class}	"
+
+	
+	data-cellId="grid_footcell_field24" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field24}
+									{BEGIN cellblock_grid_footcell_field25}
+	<td
+	
+	{$cell_grid_footcell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$date_annul_req_class}	"
+
+	
+	data-cellId="grid_footcell_field25" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field25}
+									{BEGIN cellblock_grid_footcell_field26}
+	<td
+	
+	{$cell_grid_footcell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$last_status_class}	"
+
+	
+	data-cellId="grid_footcell_field26" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field26}
+									{BEGIN cellblock_grid_footcell_field27}
+	<td
+	
+	{$cell_grid_footcell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$updated_by_class}	"
+
+	
+	data-cellId="grid_footcell_field27" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field27}
+									{BEGIN cellblock_grid_footcell_field28}
+	<td
+	
+	{$cell_grid_footcell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$private_class}	"
+
+	
+	data-cellId="grid_footcell_field28" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="domains_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field28}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+	</div>
+<div class="r-below">
+					{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+			</div>		
+{END below-grid_block}
+	</div>
+
+
+
+
+										{$footer}
+				</div>
+			</div>
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>

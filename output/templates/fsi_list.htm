@@ -1,0 +1,2214 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-list"   
+		>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="250px" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Développer" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{BEGIN menuitems_main}
+<ul data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}"	class="r-menu nav menu-treelike" 
+	data-menulevel="1"
+>
+
+{BEGIN item_children1}
+<li class="
+	{$item_current}">
+<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline data-menu-top >
+	{$item_separator}
+	<span class="r-menu-link r-menu-expanded "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+		<span class="r-menu-collapsed">{$item_collicon}{$item_firstcap}</span>
+	</a>
+{BEGIN item_showchildren2}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="2">
+	{BEGIN item_children2}
+		{BEGIN item_menulink2}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+	</a>
+			{BEGIN item_showchildren3}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="3">
+	{BEGIN item_children3}
+		{BEGIN item_menulink3}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren3}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren3}
+	</span>
+	</a>
+			{BEGIN item_showchildren4}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="4">
+	{BEGIN item_children4}
+		{BEGIN item_menulink4}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren4}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren4}
+	</span>
+	</a>
+			{BEGIN item_showchildren5}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="5">
+	{BEGIN item_children5}
+		{BEGIN item_menulink5}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren5}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren5}
+	</span>
+	</a>
+					</li>
+		{END item_menulink5}
+	{END item_children5}
+</ul>
+{END item_showchildren5}
+		</li>
+		{END item_menulink4}
+	{END item_children4}
+</ul>
+{END item_showchildren4}
+		</li>
+		{END item_menulink3}
+	{END item_children3}
+</ul>
+{END item_showchildren3}
+		</li>
+		{END item_menulink2}
+	{END item_children2}
+</ul>
+{END item_showchildren2}
+</li>
+{END item_children1}
+</ul>
+{END menuitems_main}
+			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}"	 >
+
+	<div class="panel-heading">
+		<div class="btn-group r-sp-addfield" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle btn-sm )" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Chercher dans			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group r-sp-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Montrer options</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>Toutes les conditions</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>Chaque condition</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>Cacher</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_API_password}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_API_password}" {$filterRow_attrs_API_password}>
+			<label>{$label fsi API_password }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_API_password}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_API_password}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_API_password}</span>
+						</div>
+		{END searchCtrlBlock_API_password}
+																{BEGIN searchCtrlBlock_url}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_url}" {$filterRow_attrs_url}>
+			<label>{$label fsi url }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_url}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_url}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_url}</span>
+						</div>
+		{END searchCtrlBlock_url}
+																{BEGIN searchCtrlBlock_thresholdType}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_thresholdType}" {$filterRow_attrs_thresholdType}>
+			<label>{$label fsi thresholdType }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_thresholdType}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_thresholdType}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_thresholdType}</span>
+						</div>
+		{END searchCtrlBlock_thresholdType}
+																{BEGIN searchCtrlBlock_tel}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tel}" {$filterRow_attrs_tel}>
+			<label>{$label fsi tel }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tel}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tel}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tel}</span>
+						</div>
+		{END searchCtrlBlock_tel}
+																{BEGIN searchCtrlBlock_secret_pass}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_secret_pass}" {$filterRow_attrs_secret_pass}>
+			<label>{$label fsi secret_pass }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_secret_pass}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_secret_pass}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_secret_pass}</span>
+						</div>
+		{END searchCtrlBlock_secret_pass}
+																{BEGIN searchCtrlBlock_sec_email}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sec_email}" {$filterRow_attrs_sec_email}>
+			<label>{$label fsi sec_email }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sec_email}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sec_email}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sec_email}</span>
+						</div>
+		{END searchCtrlBlock_sec_email}
+																{BEGIN searchCtrlBlock_reg_commentaire}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_reg_commentaire}" {$filterRow_attrs_reg_commentaire}>
+			<label>{$label fsi reg_commentaire }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_reg_commentaire}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_reg_commentaire}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_reg_commentaire}</span>
+						</div>
+		{END searchCtrlBlock_reg_commentaire}
+																{BEGIN searchCtrlBlock_prim_email}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_prim_email}" {$filterRow_attrs_prim_email}>
+			<label>{$label fsi prim_email }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_prim_email}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_prim_email}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_prim_email}</span>
+						</div>
+		{END searchCtrlBlock_prim_email}
+																{BEGIN searchCtrlBlock_prefix}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_prefix}" {$filterRow_attrs_prefix}>
+			<label>{$label fsi prefix }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_prefix}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_prefix}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_prefix}</span>
+						</div>
+		{END searchCtrlBlock_prefix}
+																{BEGIN searchCtrlBlock_password_reset_token_expire}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_password_reset_token_expire}" {$filterRow_attrs_password_reset_token_expire}>
+			<label>{$label fsi password_reset_token_expire }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_password_reset_token_expire}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_password_reset_token_expire}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_password_reset_token_expire}</span>
+						</div>
+		{END searchCtrlBlock_password_reset_token_expire}
+																{BEGIN searchCtrlBlock_password_reset_token}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_password_reset_token}" {$filterRow_attrs_password_reset_token}>
+			<label>{$label fsi password_reset_token }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_password_reset_token}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_password_reset_token}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_password_reset_token}</span>
+						</div>
+		{END searchCtrlBlock_password_reset_token}
+																{BEGIN searchCtrlBlock_password}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_password}" {$filterRow_attrs_password}>
+			<label>{$label fsi password }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_password}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_password}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_password}</span>
+						</div>
+		{END searchCtrlBlock_password}
+																{BEGIN searchCtrlBlock_nomnoc}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nomnoc}" {$filterRow_attrs_nomnoc}>
+			<label>{$label fsi nomnoc }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nomnoc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nomnoc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nomnoc}</span>
+						</div>
+		{END searchCtrlBlock_nomnoc}
+																{BEGIN searchCtrlBlock_nom}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nom}" {$filterRow_attrs_nom}>
+			<label>{$label fsi nom }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nom}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nom}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nom}</span>
+						</div>
+		{END searchCtrlBlock_nom}
+																{BEGIN searchCtrlBlock_mgmt}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_mgmt}" {$filterRow_attrs_mgmt}>
+			<label>{$label fsi mgmt }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_mgmt}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_mgmt}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_mgmt}</span>
+						</div>
+		{END searchCtrlBlock_mgmt}
+																{BEGIN searchCtrlBlock_login}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_login}" {$filterRow_attrs_login}>
+			<label>{$label fsi login }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_login}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_login}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_login}</span>
+						</div>
+		{END searchCtrlBlock_login}
+																{BEGIN searchCtrlBlock_langue}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_langue}" {$filterRow_attrs_langue}>
+			<label>{$label fsi langue }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_langue}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_langue}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_langue}</span>
+						</div>
+		{END searchCtrlBlock_langue}
+																{BEGIN searchCtrlBlock_fax}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_fax}" {$filterRow_attrs_fax}>
+			<label>{$label fsi fax }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_fax}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_fax}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_fax}</span>
+						</div>
+		{END searchCtrlBlock_fax}
+																{BEGIN searchCtrlBlock_etat}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_etat}" {$filterRow_attrs_etat}>
+			<label>{$label fsi etat }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_etat}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_etat}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_etat}</span>
+						</div>
+		{END searchCtrlBlock_etat}
+																{BEGIN searchCtrlBlock_email}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_email}" {$filterRow_attrs_email}>
+			<label>{$label fsi email }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_email}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_email}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_email}</span>
+						</div>
+		{END searchCtrlBlock_email}
+																{BEGIN searchCtrlBlock_date_modif}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_date_modif}" {$filterRow_attrs_date_modif}>
+			<label>{$label fsi date_modif }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_date_modif}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_date_modif}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_date_modif}</span>
+						</div>
+		{END searchCtrlBlock_date_modif}
+																{BEGIN searchCtrlBlock_creditThreshold}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_creditThreshold}" {$filterRow_attrs_creditThreshold}>
+			<label>{$label fsi creditThreshold }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_creditThreshold}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_creditThreshold}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_creditThreshold}</span>
+						</div>
+		{END searchCtrlBlock_creditThreshold}
+																{BEGIN searchCtrlBlock_creditLimit}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_creditLimit}" {$filterRow_attrs_creditLimit}>
+			<label>{$label fsi creditLimit }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_creditLimit}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_creditLimit}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_creditLimit}</span>
+						</div>
+		{END searchCtrlBlock_creditLimit}
+																{BEGIN searchCtrlBlock_commentaires}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_commentaires}" {$filterRow_attrs_commentaires}>
+			<label>{$label fsi commentaires }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_commentaires}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_commentaires}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_commentaires}</span>
+						</div>
+		{END searchCtrlBlock_commentaires}
+																{BEGIN searchCtrlBlock_allowed_IPs}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_allowed_IPs}" {$filterRow_attrs_allowed_IPs}>
+			<label>{$label fsi allowed_IPs }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_allowed_IPs}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_allowed_IPs}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_allowed_IPs}</span>
+						</div>
+		{END searchCtrlBlock_allowed_IPs}
+																{BEGIN searchCtrlBlock_adresse}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_adresse}" {$filterRow_attrs_adresse}>
+			<label>{$label fsi adresse }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_adresse}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_adresse}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_adresse}</span>
+						</div>
+		{END searchCtrlBlock_adresse}
+																{BEGIN searchCtrlBlock_admin}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_admin}" {$filterRow_attrs_admin}>
+			<label>{$label fsi admin }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_admin}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_admin}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_admin}</span>
+						</div>
+		{END searchCtrlBlock_admin}
+																{BEGIN searchCtrlBlock_accountBalance}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_accountBalance}" {$filterRow_attrs_accountBalance}>
+			<label>{$label fsi accountBalance }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_accountBalance}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_accountBalance}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_accountBalance}</span>
+						</div>
+		{END searchCtrlBlock_accountBalance}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary btn-sm" id="searchButton{$id}" {$searchbutton_attrs}>Rechercher</button>
+
+				<button class="btn btn-default btn-sm" {$showAllCont_attrs} {$showallbutton_attrs}>Montrer tout</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div data-resize-left="leftbar"  data-fixed class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="expand_menu_button" {$item_expand_menu_button} data-topcell-item-type="expand_menu_button" >
+				<span data-itemtype="expand_menu_button" data-itemid="expand_menu_button" {$item_expand_menu_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Afficher le menu" class="btn-link   
+	 glyphicon glyphicon-menu-hamburger" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Réduire" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="breadcrumb" {$item_breadcrumb} data-topcell-item-type="breadcrumb" >
+				{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+				<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Montrer tout">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-cog"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN exportselected_link}
+	<li data-itemtype="export_selected" data-itemid="export_selected" {$item_export_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}  title="" >
+				
+		Exporter la sélection		
+		</a>
+	</li>
+{END exportselected_link}
+							<li role="separator" class="divider"></li>								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="fsi_search.php{$stateLink_full}" {$advsearchlink_attrs}  title="" >
+				
+		Recherche avancée		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Afficher le panneau de recherche		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Cacher le panneau de recherche		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							<li role="separator" class="divider"></li>							{BEGIN export_link}
+	<li data-itemtype="export" data-itemid="export" {$item_export} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportlink_attrs}  title="" >
+				
+		Exporter résultats		
+		</a>
+	</li>
+{END export_link}
+							<li role="separator" class="divider"></li>							{BEGIN import_link}
+	<li data-itemtype="import" data-itemid="import" {$item_import} data-pageid="{$pageid}" data-small >
+				<a  {$importlink_attrs} href="fsi_import.php{$stateLink_full}"  title="" >
+				
+		Importer		
+		</a>
+	</li>
+{END import_link}
+							<li role="separator" class="divider"></li>					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Ouverture de session			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN userinfo_link}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		Profil de l'utilisateur		
+		</a>
+	</li>
+{END userinfo_link}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Fin de session		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN changepwd_link}
+	<li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" data-small >
+				<a  href="changepwd.php" {$changepwdlink_attrs} id="changePasswordButton{$id}"  title="" >
+				
+		Changer le mot de passe		
+		</a>
+	</li>
+{END changepwd_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+			</div>					</div>
+			</div>		
+{END top_block}
+						</div>
+											<div class="r-above">
+					{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+				{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	
+">
+		 
+		{BEGIN print_friendly}
+<span id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+	<button title="Page imprimable" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				 
+					<li class="container-fluid 
+										">
+									<div id="print_friendly_scope{$id}">
+	<div class="row">
+		<div class="col-md-4">
+			Portée:		</div>
+
+			 
+		{BEGIN print_friendly_all}
+		<div class="col-md-8">
+			<label for="printAll{$id}">
+				<input type="radio" id="printAll{$id}" data-href="fsi_print.php?all=1&amp;{$crosstable_attrs}" name="printScope" >
+									Imprimer toutes les pages							</label>
+		</div>
+		{END print_friendly_all}
+		</div>
+		<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-8">
+			<label for="printPage{$id}">
+				<input name="printScope" id="printPage{$id}" type="radio" checked data-href="fsi_print.php?{$crosstable_attrs}">
+				Imprimer cette page			</label>
+		</div>
+	</div>
+		
+		 
+	<div class="row">
+		<div class="col-md-4">
+			&nbsp;
+		</div>
+		<div class="col-md-8">
+			<label style="color: gray;" for="printSelection{$id}">
+			<input name="printScope" disabled="disabled" id="printSelection{$id}" type="radio" >
+			Imprimer la sélection			</label>
+		</div>
+	</div>
+	</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									{BEGIN print_details}
+<div>
+	<label for="printDetailsToggler{$id}">
+		<input type="checkbox" id="printDetailsToggler{$id}">
+		Imprimer les détails	</label>
+	<div  id="printdetailstables{$id}" style="display:none;">
+											{BEGIN print_details_fsi_ns}
+			<div>
+				<label for="printDetailsfsi_ns{$id}">
+					<input type="checkbox" value="fsi_ns" id="printDetailsfsi_ns{$id}" checked>
+					Fsi Ns				</label>
+			</div>
+			{END print_details_fsi_ns}
+						</div>
+</div>
+{END print_details}
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									<div>
+	<label for="printPerPage{$id}">
+					Enregistrements par page							
+	</label>
+	<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+					 text-center 					">
+									<span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" id="print_friendly_button{$id}" >
+							Imprimer			</a>
+</span>
+				 
+					</li>
+															</ul>
+</span>
+{END print_friendly}
+		</div>					</div>
+			</div>		
+{END above-grid_block}
+	</div>
+<div class="r-grid">
+	{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+					
+{BEGIN grid_block}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}<div data-vcolumns=1 class="r-fluid r-grid-vertical bs-grid-vertical" data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" >
+{BEGIN grid_row}
+	{BEGIN grid_record}
+	{BEGIN grid_vrecord}
+	<div class="r-record-body {$rowclass}" {$rowattrs} {$rowstyle} data-record-id="{$recId}">
+		<div class="panel panel-default" {$recordattrs}>
+											{BEGIN grid_recordheader}
+			<div class="panel-heading">
+					
+	
+				<table data-width="2" class="header-table">
+				 
+										<tr>
+						 
+							<td 
+	class="			"
+	colspan="2"		 
+	data-cellId="grid_cell_top" data-pageid="{$pageid}" data-record-id="{$recId}">
+ 
+{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox" data-itemid="grid_checkbox" {$item_grid_checkbox} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkbox_attrs}
+		>
+</span>	
+{END checkbox_column}
+ 
+{BEGIN edit_column}
+{BEGIN edit_link}
+<span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Editer" class="btn-link   
+	 glyphicon glyphicon-pencil" href="fsi_edit.php?{$editlink}" {$editlink_attrs} title="Editer" >		
+				
+								</a>
+</span>
+{END edit_link}
+{END edit_column}
+ 
+{BEGIN view_column}
+{BEGIN view_link}
+<span data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Afficher l'enregistrement" class="btn-link   
+	 glyphicon glyphicon-search" href="fsi_view.php?{$editlink}" {$viewlink_attrs} title="Afficher" >		
+				
+								</a>
+</span>
+{END view_link}
+{END view_column}
+</td>
+											</tr>
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+													</table>
+
+					</div>
+		{END grid_recordheader}
+									
+			<div class="panel-body">					
+					
+	
+				<table data-width="2" >
+				 
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$nom_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN nom_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nom" data-fieldname="nom" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi nom }</span>
+			</span>
+	</span>
+{END nom_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$nom_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN nom_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nom" data-fieldname="nom" data-default-width >
+{$nom_value}
+</span>
+{END nom_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$adresse_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label1" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN adresse_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="adresse" data-fieldname="adresse" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi adresse }</span>
+			</span>
+	</span>
+{END adresse_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$adresse_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN adresse_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="adresse" data-fieldname="adresse" data-default-width >
+{$adresse_value}
+</span>
+{END adresse_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$tel_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label2" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN tel_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tel" data-fieldname="tel" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi tel }</span>
+			</span>
+	</span>
+{END tel_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$tel_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN tel_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tel" data-fieldname="tel" data-default-width >
+{$tel_value}
+</span>
+{END tel_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$fax_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label3" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN fax_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fax" data-fieldname="fax" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi fax }</span>
+			</span>
+	</span>
+{END fax_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$fax_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN fax_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fax" data-fieldname="fax" data-default-width >
+{$fax_value}
+</span>
+{END fax_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$email_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label4" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN email_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field32" {$item_simple_grid_field32} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="email" data-fieldname="email" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi email }</span>
+			</span>
+	</span>
+{END email_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$email_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN email_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="email" data-fieldname="email" data-default-width >
+{$email_value}
+</span>
+{END email_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$prim_email_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label5" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN prim_email_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field33" {$item_simple_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="prim_email" data-fieldname="prim_email" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi prim_email }</span>
+			</span>
+	</span>
+{END prim_email_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$prim_email_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN prim_email_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="prim_email" data-fieldname="prim_email" data-default-width >
+{$prim_email_value}
+</span>
+{END prim_email_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$sec_email_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label6" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN sec_email_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field34" {$item_simple_grid_field34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sec_email" data-fieldname="sec_email" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi sec_email }</span>
+			</span>
+	</span>
+{END sec_email_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$sec_email_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN sec_email_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sec_email" data-fieldname="sec_email" data-default-width >
+{$sec_email_value}
+</span>
+{END sec_email_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$allowed_IPs_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label7" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN allowed_IPs_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field35" {$item_simple_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="allowed_IPs" data-fieldname="allowed_IPs" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi allowed_IPs }</span>
+			</span>
+	</span>
+{END allowed_IPs_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$allowed_IPs_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN allowed_IPs_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="allowed_IPs" data-fieldname="allowed_IPs" data-default-width >
+{$allowed_IPs_value}
+</span>
+{END allowed_IPs_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$url_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label8" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN url_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field36" {$item_simple_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="url" data-fieldname="url" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi url }</span>
+			</span>
+	</span>
+{END url_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$url_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN url_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="url" data-fieldname="url" data-default-width >
+{$url_value}
+</span>
+{END url_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$login_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label9" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN login_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field37" {$item_simple_grid_field37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="login" data-fieldname="login" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi login }</span>
+			</span>
+	</span>
+{END login_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$login_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN login_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="login" data-fieldname="login" data-default-width >
+{$login_value}
+</span>
+{END login_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$password_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label10" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN password_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field38" {$item_simple_grid_field38} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="password" data-fieldname="password" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi password }</span>
+			</span>
+	</span>
+{END password_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$password_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN password_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="password" data-fieldname="password" data-default-width >
+{$password_value}
+</span>
+{END password_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$API_password_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label11" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN API_password_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field39" {$item_simple_grid_field39} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="API_password" data-fieldname="API_password" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi API_password }</span>
+			</span>
+	</span>
+{END API_password_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$API_password_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN API_password_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="API_password" data-fieldname="API_password" data-default-width >
+{$API_password_value}
+</span>
+{END API_password_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$password_reset_token_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label12" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN password_reset_token_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field40" {$item_simple_grid_field40} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="password_reset_token" data-fieldname="password_reset_token" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi password_reset_token }</span>
+			</span>
+	</span>
+{END password_reset_token_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$password_reset_token_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN password_reset_token_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="password_reset_token" data-fieldname="password_reset_token" data-default-width >
+{$password_reset_token_value}
+</span>
+{END password_reset_token_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$password_reset_token_expire_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label13" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN password_reset_token_expire_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field41" {$item_simple_grid_field41} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="password_reset_token_expire" data-fieldname="password_reset_token_expire" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi password_reset_token_expire }</span>
+			</span>
+	</span>
+{END password_reset_token_expire_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$password_reset_token_expire_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN password_reset_token_expire_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="password_reset_token_expire" data-fieldname="password_reset_token_expire" data-default-width >
+{$password_reset_token_expire_value}
+</span>
+{END password_reset_token_expire_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$secret_pass_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label14" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN secret_pass_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field42" {$item_simple_grid_field42} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secret_pass" data-fieldname="secret_pass" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi secret_pass }</span>
+			</span>
+	</span>
+{END secret_pass_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$secret_pass_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN secret_pass_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="secret_pass" data-fieldname="secret_pass" data-default-width >
+{$secret_pass_value}
+</span>
+{END secret_pass_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$commentaires_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label15" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN commentaires_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field43" {$item_simple_grid_field43} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="commentaires" data-fieldname="commentaires" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi commentaires }</span>
+			</span>
+	</span>
+{END commentaires_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$commentaires_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN commentaires_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="commentaires" data-fieldname="commentaires" data-default-width >
+{$commentaires_value}
+</span>
+{END commentaires_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$date_modif_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label16" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN date_modif_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field44" {$item_simple_grid_field44} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_modif" data-fieldname="date_modif" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi date_modif }</span>
+			</span>
+	</span>
+{END date_modif_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$date_modif_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN date_modif_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_modif" data-fieldname="date_modif" data-default-width >
+{$date_modif_value}
+</span>
+{END date_modif_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$nomnoc_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label17" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN nomnoc_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field45" {$item_simple_grid_field45} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nomnoc" data-fieldname="nomnoc" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi nomnoc }</span>
+			</span>
+	</span>
+{END nomnoc_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$nomnoc_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN nomnoc_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nomnoc" data-fieldname="nomnoc" data-default-width >
+{$nomnoc_value}
+</span>
+{END nomnoc_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$admin_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label18" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN admin_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field46" {$item_simple_grid_field46} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="admin" data-fieldname="admin" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi admin }</span>
+			</span>
+	</span>
+{END admin_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$admin_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field18" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN admin_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="admin" data-fieldname="admin" data-default-width >
+{$admin_value}
+</span>
+{END admin_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$etat_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label19" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN etat_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field47" {$item_simple_grid_field47} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="etat" data-fieldname="etat" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi etat }</span>
+			</span>
+	</span>
+{END etat_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$etat_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field19" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN etat_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="etat" data-fieldname="etat" data-default-width >
+{$etat_value}
+</span>
+{END etat_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$prefix_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label20" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN prefix_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field48" {$item_simple_grid_field48} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="prefix" data-fieldname="prefix" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi prefix }</span>
+			</span>
+	</span>
+{END prefix_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$prefix_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field20" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN prefix_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="prefix" data-fieldname="prefix" data-default-width >
+{$prefix_value}
+</span>
+{END prefix_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$langue_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label21" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN langue_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field49" {$item_simple_grid_field49} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="langue" data-fieldname="langue" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi langue }</span>
+			</span>
+	</span>
+{END langue_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$langue_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field21" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN langue_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="langue" data-fieldname="langue" data-default-width >
+{$langue_value}
+</span>
+{END langue_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$accountBalance_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label22" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN accountBalance_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field50" {$item_simple_grid_field50} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="accountBalance" data-fieldname="accountBalance" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi accountBalance }</span>
+			</span>
+	</span>
+{END accountBalance_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$accountBalance_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field22" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN accountBalance_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="accountBalance" data-fieldname="accountBalance" data-default-width >
+{$accountBalance_value}
+</span>
+{END accountBalance_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$creditLimit_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label23" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN creditLimit_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field51" {$item_simple_grid_field51} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="creditLimit" data-fieldname="creditLimit" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi creditLimit }</span>
+			</span>
+	</span>
+{END creditLimit_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$creditLimit_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field23" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN creditLimit_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="creditLimit" data-fieldname="creditLimit" data-default-width >
+{$creditLimit_value}
+</span>
+{END creditLimit_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$creditThreshold_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label24" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN creditThreshold_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field52" {$item_simple_grid_field52} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="creditThreshold" data-fieldname="creditThreshold" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi creditThreshold }</span>
+			</span>
+	</span>
+{END creditThreshold_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$creditThreshold_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field24" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN creditThreshold_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="creditThreshold" data-fieldname="creditThreshold" data-default-width >
+{$creditThreshold_value}
+</span>
+{END creditThreshold_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$thresholdType_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label25" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN thresholdType_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field53" {$item_simple_grid_field53} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="thresholdType" data-fieldname="thresholdType" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi thresholdType }</span>
+			</span>
+	</span>
+{END thresholdType_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$thresholdType_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field25" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN thresholdType_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="thresholdType" data-fieldname="thresholdType" data-default-width >
+{$thresholdType_value}
+</span>
+{END thresholdType_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$mgmt_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label26" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN mgmt_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field54" {$item_simple_grid_field54} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mgmt" data-fieldname="mgmt" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi mgmt }</span>
+			</span>
+	</span>
+{END mgmt_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$mgmt_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field26" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN mgmt_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mgmt" data-fieldname="mgmt" data-default-width >
+{$mgmt_value}
+</span>
+{END mgmt_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$reg_commentaire_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label27" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN reg_commentaire_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field55" {$item_simple_grid_field55} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="reg_commentaire" data-fieldname="reg_commentaire" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label fsi reg_commentaire }</span>
+			</span>
+	</span>
+{END reg_commentaire_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$reg_commentaire_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field27" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN reg_commentaire_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="reg_commentaire" data-fieldname="reg_commentaire" data-default-width >
+{$reg_commentaire_value}
+</span>
+{END reg_commentaire_fieldcolumn}</td>
+											</tr>
+									 
+													</table>
+
+				
+			</div>				
+									
+		</div>
+</div>
+		
+
+ 
+			{END grid_vrecord}
+	{END grid_record}
+{END grid_row}
+</div>
+{END grid_block}
+	</div>
+<div class="r-below">
+					{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+			</div>		
+{END below-grid_block}
+	</div>
+
+
+
+
+										{$footer}
+				</div>
+			</div>
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>

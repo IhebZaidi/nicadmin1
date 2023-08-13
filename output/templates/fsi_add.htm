@@ -1,0 +1,739 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-add" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel fsi add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>{mlang_message BACK_TO_LIST}</button>
+	{END message_back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>{mlang_message VIEW}</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>{mlang_message EDIT}</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN adresse_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_adresse}  r-vertical-field" 
+	data-signal-error-for="adresse{$id}" {$required_attr_adresse}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="adresse" data-fieldname="adresse" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_adresse}">
+		{BEGIN adresse_label}{$label fsi adresse }{END adresse_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$adresse_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="adresse" {$tooltipAttr fsi adresse } >
+		<div class="text-muted" >
+		{$tooltip fsi adresse }		</div>
+	</div>
+</div>
+
+
+{END adresse_fieldblock}
+											
+{BEGIN tel_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tel}  r-vertical-field" 
+	data-signal-error-for="tel{$id}" {$required_attr_tel}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="tel" data-fieldname="tel" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_tel}">
+		{BEGIN tel_label}{$label fsi tel }{END tel_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$tel_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tel" {$tooltipAttr fsi tel } >
+		<div class="text-muted" >
+		{$tooltip fsi tel }		</div>
+	</div>
+</div>
+
+
+{END tel_fieldblock}
+											
+{BEGIN fax_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fax}  r-vertical-field" 
+	data-signal-error-for="fax{$id}" {$required_attr_fax}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="fax" data-fieldname="fax" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_fax}">
+		{BEGIN fax_label}{$label fsi fax }{END fax_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$fax_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="fax" {$tooltipAttr fsi fax } >
+		<div class="text-muted" >
+		{$tooltip fsi fax }		</div>
+	</div>
+</div>
+
+
+{END fax_fieldblock}
+											
+{BEGIN email_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_email}  r-vertical-field" 
+	data-signal-error-for="email{$id}" {$required_attr_email}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="email" data-fieldname="email" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_email}">
+		{BEGIN email_label}{$label fsi email }{END email_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$email_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="email" {$tooltipAttr fsi email } >
+		<div class="text-muted" >
+		{$tooltip fsi email }		</div>
+	</div>
+</div>
+
+
+{END email_fieldblock}
+											
+{BEGIN prim_email_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_prim_email}  r-vertical-field" 
+	data-signal-error-for="prim_email{$id}" {$required_attr_prim_email}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="prim_email" data-fieldname="prim_email" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_prim_email}">
+		{BEGIN prim_email_label}{$label fsi prim_email }{END prim_email_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$prim_email_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="prim_email" {$tooltipAttr fsi prim_email } >
+		<div class="text-muted" >
+		{$tooltip fsi prim_email }		</div>
+	</div>
+</div>
+
+
+{END prim_email_fieldblock}
+											
+{BEGIN sec_email_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sec_email}  r-vertical-field" 
+	data-signal-error-for="sec_email{$id}" {$required_attr_sec_email}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="sec_email" data-fieldname="sec_email" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_sec_email}">
+		{BEGIN sec_email_label}{$label fsi sec_email }{END sec_email_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$sec_email_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sec_email" {$tooltipAttr fsi sec_email } >
+		<div class="text-muted" >
+		{$tooltip fsi sec_email }		</div>
+	</div>
+</div>
+
+
+{END sec_email_fieldblock}
+											
+{BEGIN allowed_IPs_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_allowed_IPs}  r-vertical-field" 
+	data-signal-error-for="allowed_IPs{$id}" {$required_attr_allowed_IPs}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="allowed_IPs" data-fieldname="allowed_IPs" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_allowed_IPs}">
+		{BEGIN allowed_IPs_label}{$label fsi allowed_IPs }{END allowed_IPs_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$allowed_IPs_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="allowed_IPs" {$tooltipAttr fsi allowed_IPs } >
+		<div class="text-muted" >
+		{$tooltip fsi allowed_IPs }		</div>
+	</div>
+</div>
+
+
+{END allowed_IPs_fieldblock}
+											
+{BEGIN url_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_url}  r-vertical-field" 
+	data-signal-error-for="url{$id}" {$required_attr_url}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="url" data-fieldname="url" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_url}">
+		{BEGIN url_label}{$label fsi url }{END url_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$url_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="url" {$tooltipAttr fsi url } >
+		<div class="text-muted" >
+		{$tooltip fsi url }		</div>
+	</div>
+</div>
+
+
+{END url_fieldblock}
+											
+{BEGIN password_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_password}  r-vertical-field" 
+	data-signal-error-for="password{$id}" {$required_attr_password}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="password" data-fieldname="password" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_password}">
+		{BEGIN password_label}{$label fsi password }{END password_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$password_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="password" {$tooltipAttr fsi password } >
+		<div class="text-muted" >
+		{$tooltip fsi password }		</div>
+	</div>
+</div>
+
+
+{END password_fieldblock}
+											
+{BEGIN API_password_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_API_password}  r-vertical-field" 
+	data-signal-error-for="API_password{$id}" {$required_attr_API_password}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="API_password" data-fieldname="API_password" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_API_password}">
+		{BEGIN API_password_label}{$label fsi API_password }{END API_password_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$API_password_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="API_password" {$tooltipAttr fsi API_password } >
+		<div class="text-muted" >
+		{$tooltip fsi API_password }		</div>
+	</div>
+</div>
+
+
+{END API_password_fieldblock}
+											
+{BEGIN password_reset_token_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_password_reset_token}  r-vertical-field" 
+	data-signal-error-for="password_reset_token{$id}" {$required_attr_password_reset_token}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="password_reset_token" data-fieldname="password_reset_token" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_password_reset_token}">
+		{BEGIN password_reset_token_label}{$label fsi password_reset_token }{END password_reset_token_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$password_reset_token_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="password_reset_token" {$tooltipAttr fsi password_reset_token } >
+		<div class="text-muted" >
+		{$tooltip fsi password_reset_token }		</div>
+	</div>
+</div>
+
+
+{END password_reset_token_fieldblock}
+											
+{BEGIN password_reset_token_expire_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_password_reset_token_expire}  r-vertical-field" 
+	data-signal-error-for="password_reset_token_expire{$id}" {$required_attr_password_reset_token_expire}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="password_reset_token_expire" data-fieldname="password_reset_token_expire" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_password_reset_token_expire}">
+		{BEGIN password_reset_token_expire_label}{$label fsi password_reset_token_expire }{END password_reset_token_expire_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$password_reset_token_expire_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="password_reset_token_expire" {$tooltipAttr fsi password_reset_token_expire } >
+		<div class="text-muted" >
+		{$tooltip fsi password_reset_token_expire }		</div>
+	</div>
+</div>
+
+
+{END password_reset_token_expire_fieldblock}
+											
+{BEGIN secret_pass_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_secret_pass}  r-vertical-field" 
+	data-signal-error-for="secret_pass{$id}" {$required_attr_secret_pass}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="secret_pass" data-fieldname="secret_pass" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_secret_pass}">
+		{BEGIN secret_pass_label}{$label fsi secret_pass }{END secret_pass_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$secret_pass_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="secret_pass" {$tooltipAttr fsi secret_pass } >
+		<div class="text-muted" >
+		{$tooltip fsi secret_pass }		</div>
+	</div>
+</div>
+
+
+{END secret_pass_fieldblock}
+											
+{BEGIN commentaires_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_commentaires}  r-vertical-field" 
+	data-signal-error-for="commentaires{$id}" {$required_attr_commentaires}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="commentaires" data-fieldname="commentaires" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_commentaires}">
+		{BEGIN commentaires_label}{$label fsi commentaires }{END commentaires_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$commentaires_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="commentaires" {$tooltipAttr fsi commentaires } >
+		<div class="text-muted" >
+		{$tooltip fsi commentaires }		</div>
+	</div>
+</div>
+
+
+{END commentaires_fieldblock}
+											
+{BEGIN date_modif_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_modif}  r-vertical-field" 
+	data-signal-error-for="date_modif{$id}" {$required_attr_date_modif}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="date_modif" data-fieldname="date_modif" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_date_modif}">
+		{BEGIN date_modif_label}{$label fsi date_modif }{END date_modif_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$date_modif_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="date_modif" {$tooltipAttr fsi date_modif } >
+		<div class="text-muted" >
+		{$tooltip fsi date_modif }		</div>
+	</div>
+</div>
+
+
+{END date_modif_fieldblock}
+											
+{BEGIN nomnoc_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nomnoc}  r-vertical-field" 
+	data-signal-error-for="nomnoc{$id}" {$required_attr_nomnoc}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="nomnoc" data-fieldname="nomnoc" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_nomnoc}">
+		{BEGIN nomnoc_label}{$label fsi nomnoc }{END nomnoc_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$nomnoc_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nomnoc" {$tooltipAttr fsi nomnoc } >
+		<div class="text-muted" >
+		{$tooltip fsi nomnoc }		</div>
+	</div>
+</div>
+
+
+{END nomnoc_fieldblock}
+											
+{BEGIN admin_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_admin}  r-vertical-field" 
+	data-signal-error-for="admin{$id}" {$required_attr_admin}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="admin" data-fieldname="admin" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_admin}">
+		{BEGIN admin_label}{$label fsi admin }{END admin_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$admin_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="admin" {$tooltipAttr fsi admin } >
+		<div class="text-muted" >
+		{$tooltip fsi admin }		</div>
+	</div>
+</div>
+
+
+{END admin_fieldblock}
+											
+{BEGIN etat_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_etat}  r-vertical-field" 
+	data-signal-error-for="etat{$id}" {$required_attr_etat}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="etat" data-fieldname="etat" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_etat}">
+		{BEGIN etat_label}{$label fsi etat }{END etat_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$etat_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="etat" {$tooltipAttr fsi etat } >
+		<div class="text-muted" >
+		{$tooltip fsi etat }		</div>
+	</div>
+</div>
+
+
+{END etat_fieldblock}
+											
+{BEGIN prefix_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_prefix}  r-vertical-field" 
+	data-signal-error-for="prefix{$id}" {$required_attr_prefix}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="prefix" data-fieldname="prefix" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_prefix}">
+		{BEGIN prefix_label}{$label fsi prefix }{END prefix_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$prefix_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="prefix" {$tooltipAttr fsi prefix } >
+		<div class="text-muted" >
+		{$tooltip fsi prefix }		</div>
+	</div>
+</div>
+
+
+{END prefix_fieldblock}
+											
+{BEGIN langue_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_langue}  r-vertical-field" 
+	data-signal-error-for="langue{$id}" {$required_attr_langue}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="langue" data-fieldname="langue" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_langue}">
+		{BEGIN langue_label}{$label fsi langue }{END langue_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$langue_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="langue" {$tooltipAttr fsi langue } >
+		<div class="text-muted" >
+		{$tooltip fsi langue }		</div>
+	</div>
+</div>
+
+
+{END langue_fieldblock}
+											
+{BEGIN accountBalance_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_accountBalance}  r-vertical-field" 
+	data-signal-error-for="accountBalance{$id}" {$required_attr_accountBalance}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="accountBalance" data-fieldname="accountBalance" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_accountBalance}">
+		{BEGIN accountBalance_label}{$label fsi accountBalance }{END accountBalance_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$accountBalance_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="accountBalance" {$tooltipAttr fsi accountBalance } >
+		<div class="text-muted" >
+		{$tooltip fsi accountBalance }		</div>
+	</div>
+</div>
+
+
+{END accountBalance_fieldblock}
+											
+{BEGIN creditLimit_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_creditLimit}  r-vertical-field" 
+	data-signal-error-for="creditLimit{$id}" {$required_attr_creditLimit}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="creditLimit" data-fieldname="creditLimit" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_creditLimit}">
+		{BEGIN creditLimit_label}{$label fsi creditLimit }{END creditLimit_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$creditLimit_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="creditLimit" {$tooltipAttr fsi creditLimit } >
+		<div class="text-muted" >
+		{$tooltip fsi creditLimit }		</div>
+	</div>
+</div>
+
+
+{END creditLimit_fieldblock}
+											
+{BEGIN creditThreshold_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_creditThreshold}  r-vertical-field" 
+	data-signal-error-for="creditThreshold{$id}" {$required_attr_creditThreshold}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="creditThreshold" data-fieldname="creditThreshold" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_creditThreshold}">
+		{BEGIN creditThreshold_label}{$label fsi creditThreshold }{END creditThreshold_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$creditThreshold_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="creditThreshold" {$tooltipAttr fsi creditThreshold } >
+		<div class="text-muted" >
+		{$tooltip fsi creditThreshold }		</div>
+	</div>
+</div>
+
+
+{END creditThreshold_fieldblock}
+											
+{BEGIN thresholdType_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_thresholdType}  r-vertical-field" 
+	data-signal-error-for="thresholdType{$id}" {$required_attr_thresholdType}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="thresholdType" data-fieldname="thresholdType" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_thresholdType}">
+		{BEGIN thresholdType_label}{$label fsi thresholdType }{END thresholdType_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$thresholdType_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="thresholdType" {$tooltipAttr fsi thresholdType } >
+		<div class="text-muted" >
+		{$tooltip fsi thresholdType }		</div>
+	</div>
+</div>
+
+
+{END thresholdType_fieldblock}
+											
+{BEGIN mgmt_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mgmt}  r-vertical-field" 
+	data-signal-error-for="mgmt{$id}" {$required_attr_mgmt}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="mgmt" data-fieldname="mgmt" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_mgmt}">
+		{BEGIN mgmt_label}{$label fsi mgmt }{END mgmt_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$mgmt_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="mgmt" {$tooltipAttr fsi mgmt } >
+		<div class="text-muted" >
+		{$tooltip fsi mgmt }		</div>
+	</div>
+</div>
+
+
+{END mgmt_fieldblock}
+											
+{BEGIN reg_commentaire_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_reg_commentaire}  r-vertical-field" 
+	data-signal-error-for="reg_commentaire{$id}" {$required_attr_reg_commentaire}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="reg_commentaire" data-fieldname="reg_commentaire" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_reg_commentaire}">
+		{BEGIN reg_commentaire_label}{$label fsi reg_commentaire }{END reg_commentaire_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$reg_commentaire_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="reg_commentaire" {$tooltipAttr fsi reg_commentaire } >
+		<div class="text-muted" >
+		{$tooltip fsi reg_commentaire }		</div>
+	</div>
+</div>
+
+
+{END reg_commentaire_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							{mlang_message SAVE}			</a>
+</span>
+	 
+		<span data-itemtype="add_reset" data-itemid="add_reset" {$item_add_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="resetButton{$id}" >
+							{mlang_message RESET}			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							{mlang_message CANCEL}			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

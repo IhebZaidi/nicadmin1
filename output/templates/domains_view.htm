@@ -1,0 +1,713 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel domains view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN code_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_code}  r-vertical-field" data-fieldname="code" data-signal-error-for="code{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="code" data-fieldname="code" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_code}">
+		
+		{BEGIN code_label}{$label domains code }{END code_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$code_value}	</div>
+
+		
+</div>
+
+
+{END code_fieldblock}
+											
+{BEGIN domain_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_domain}  r-vertical-field" data-fieldname="domain" data-signal-error-for="domain{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="domain" data-fieldname="domain" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_domain}">
+		
+		{BEGIN domain_label}{$label domains domain }{END domain_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$domain_value}	</div>
+
+		
+</div>
+
+
+{END domain_fieldblock}
+											
+{BEGIN domainidn_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_domainidn}  r-vertical-field" data-fieldname="domainidn" data-signal-error-for="domainidn{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="domainidn" data-fieldname="domainidn" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_domainidn}">
+		
+		{BEGIN domainidn_label}{$label domains domainidn }{END domainidn_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$domainidn_value}	</div>
+
+		
+</div>
+
+
+{END domainidn_fieldblock}
+											
+{BEGIN ext_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ext}  r-vertical-field" data-fieldname="ext" data-signal-error-for="ext{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="ext" data-fieldname="ext" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ext}">
+		
+		{BEGIN ext_label}{$label domains ext }{END ext_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ext_value}	</div>
+
+		
+</div>
+
+
+{END ext_fieldblock}
+											
+{BEGIN fsi_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fsi}  r-vertical-field" data-fieldname="fsi" data-signal-error-for="fsi{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="fsi" data-fieldname="fsi" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_fsi}">
+		
+		{BEGIN fsi_label}{$label domains fsi }{END fsi_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$fsi_value}	</div>
+
+		
+</div>
+
+
+{END fsi_fieldblock}
+											
+{BEGIN rubrique_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_rubrique}  r-vertical-field" data-fieldname="rubrique" data-signal-error-for="rubrique{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="rubrique" data-fieldname="rubrique" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_rubrique}">
+		
+		{BEGIN rubrique_label}{$label domains rubrique }{END rubrique_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$rubrique_value}	</div>
+
+		
+</div>
+
+
+{END rubrique_fieldblock}
+											
+{BEGIN date_recept_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_recept}  r-vertical-field" data-fieldname="date_recept" data-signal-error-for="date_recept{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="date_recept" data-fieldname="date_recept" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_date_recept}">
+		
+		{BEGIN date_recept_label}{$label domains date_recept }{END date_recept_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$date_recept_value}	</div>
+
+		
+</div>
+
+
+{END date_recept_fieldblock}
+											
+{BEGIN date_accept_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_accept}  r-vertical-field" data-fieldname="date_accept" data-signal-error-for="date_accept{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="date_accept" data-fieldname="date_accept" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_date_accept}">
+		
+		{BEGIN date_accept_label}{$label domains date_accept }{END date_accept_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$date_accept_value}	</div>
+
+		
+</div>
+
+
+{END date_accept_fieldblock}
+											
+{BEGIN date_activ_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_activ}  r-vertical-field" data-fieldname="date_activ" data-signal-error-for="date_activ{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="date_activ" data-fieldname="date_activ" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_date_activ}">
+		
+		{BEGIN date_activ_label}{$label domains date_activ }{END date_activ_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$date_activ_value}	</div>
+
+		
+</div>
+
+
+{END date_activ_fieldblock}
+											
+{BEGIN date_modif_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_modif}  r-vertical-field" data-fieldname="date_modif" data-signal-error-for="date_modif{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="date_modif" data-fieldname="date_modif" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_date_modif}">
+		
+		{BEGIN date_modif_label}{$label domains date_modif }{END date_modif_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$date_modif_value}	</div>
+
+		
+</div>
+
+
+{END date_modif_fieldblock}
+											
+{BEGIN date_annul_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_annul}  r-vertical-field" data-fieldname="date_annul" data-signal-error-for="date_annul{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="date_annul" data-fieldname="date_annul" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_date_annul}">
+		
+		{BEGIN date_annul_label}{$label domains date_annul }{END date_annul_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$date_annul_value}	</div>
+
+		
+</div>
+
+
+{END date_annul_fieldblock}
+											
+{BEGIN date_annul_due_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_annul_due}  r-vertical-field" data-fieldname="date_annul_due" data-signal-error-for="date_annul_due{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="date_annul_due" data-fieldname="date_annul_due" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_date_annul_due}">
+		
+		{BEGIN date_annul_due_label}{$label domains date_annul_due }{END date_annul_due_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$date_annul_due_value}	</div>
+
+		
+</div>
+
+
+{END date_annul_due_fieldblock}
+											
+{BEGIN etat_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_etat}  r-vertical-field" data-fieldname="etat" data-signal-error-for="etat{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="etat" data-fieldname="etat" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_etat}">
+		
+		{BEGIN etat_label}{$label domains etat }{END etat_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$etat_value}	</div>
+
+		
+</div>
+
+
+{END etat_fieldblock}
+											
+{BEGIN commentaire_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_commentaire}  r-vertical-field" data-fieldname="commentaire" data-signal-error-for="commentaire{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="commentaire" data-fieldname="commentaire" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_commentaire}">
+		
+		{BEGIN commentaire_label}{$label domains commentaire }{END commentaire_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$commentaire_value}	</div>
+
+		
+</div>
+
+
+{END commentaire_fieldblock}
+											
+{BEGIN id_fsi_in_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_fsi_in}  r-vertical-field" data-fieldname="id_fsi_in" data-signal-error-for="id_fsi_in{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="id_fsi_in" data-fieldname="id_fsi_in" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_fsi_in}">
+		
+		{BEGIN id_fsi_in_label}{$label domains id_fsi_in }{END id_fsi_in_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_fsi_in_value}	</div>
+
+		
+</div>
+
+
+{END id_fsi_in_fieldblock}
+											
+{BEGIN domain_pw_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_domain_pw}  r-vertical-field" data-fieldname="domain_pw" data-signal-error-for="domain_pw{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="domain_pw" data-fieldname="domain_pw" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_domain_pw}">
+		
+		{BEGIN domain_pw_label}{$label domains domain_pw }{END domain_pw_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$domain_pw_value}	</div>
+
+		
+</div>
+
+
+{END domain_pw_fieldblock}
+											
+{BEGIN date_blocked_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_blocked}  r-vertical-field" data-fieldname="date_blocked" data-signal-error-for="date_blocked{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="date_blocked" data-fieldname="date_blocked" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_date_blocked}">
+		
+		{BEGIN date_blocked_label}{$label domains date_blocked }{END date_blocked_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$date_blocked_value}	</div>
+
+		
+</div>
+
+
+{END date_blocked_fieldblock}
+											
+{BEGIN date_blocked_max_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_blocked_max}  r-vertical-field" data-fieldname="date_blocked_max" data-signal-error-for="date_blocked_max{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="date_blocked_max" data-fieldname="date_blocked_max" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_date_blocked_max}">
+		
+		{BEGIN date_blocked_max_label}{$label domains date_blocked_max }{END date_blocked_max_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$date_blocked_max_value}	</div>
+
+		
+</div>
+
+
+{END date_blocked_max_fieldblock}
+											
+{BEGIN blocked_by_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_blocked_by}  r-vertical-field" data-fieldname="blocked_by" data-signal-error-for="blocked_by{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field28" {$item_integrated_edit_field28} data-pageid="{$pageid}" data-field="blocked_by" data-fieldname="blocked_by" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_blocked_by}">
+		
+		{BEGIN blocked_by_label}{$label domains blocked_by }{END blocked_by_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$blocked_by_value}	</div>
+
+		
+</div>
+
+
+{END blocked_by_fieldblock}
+											
+{BEGIN date_unblocked_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_unblocked}  r-vertical-field" data-fieldname="date_unblocked" data-signal-error-for="date_unblocked{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field29" {$item_integrated_edit_field29} data-pageid="{$pageid}" data-field="date_unblocked" data-fieldname="date_unblocked" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_date_unblocked}">
+		
+		{BEGIN date_unblocked_label}{$label domains date_unblocked }{END date_unblocked_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$date_unblocked_value}	</div>
+
+		
+</div>
+
+
+{END date_unblocked_fieldblock}
+											
+{BEGIN date_transfer_req_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_transfer_req}  r-vertical-field" data-fieldname="date_transfer_req" data-signal-error-for="date_transfer_req{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field30" {$item_integrated_edit_field30} data-pageid="{$pageid}" data-field="date_transfer_req" data-fieldname="date_transfer_req" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_date_transfer_req}">
+		
+		{BEGIN date_transfer_req_label}{$label domains date_transfer_req }{END date_transfer_req_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$date_transfer_req_value}	</div>
+
+		
+</div>
+
+
+{END date_transfer_req_fieldblock}
+											
+{BEGIN date_transfer_due_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_transfer_due}  r-vertical-field" data-fieldname="date_transfer_due" data-signal-error-for="date_transfer_due{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field31" {$item_integrated_edit_field31} data-pageid="{$pageid}" data-field="date_transfer_due" data-fieldname="date_transfer_due" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_date_transfer_due}">
+		
+		{BEGIN date_transfer_due_label}{$label domains date_transfer_due }{END date_transfer_due_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$date_transfer_due_value}	</div>
+
+		
+</div>
+
+
+{END date_transfer_due_fieldblock}
+											
+{BEGIN date_transfer_canceled_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_transfer_canceled}  r-vertical-field" data-fieldname="date_transfer_canceled" data-signal-error-for="date_transfer_canceled{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field32" {$item_integrated_edit_field32} data-pageid="{$pageid}" data-field="date_transfer_canceled" data-fieldname="date_transfer_canceled" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_date_transfer_canceled}">
+		
+		{BEGIN date_transfer_canceled_label}{$label domains date_transfer_canceled }{END date_transfer_canceled_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$date_transfer_canceled_value}	</div>
+
+		
+</div>
+
+
+{END date_transfer_canceled_fieldblock}
+											
+{BEGIN date_transfer_accepted_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_transfer_accepted}  r-vertical-field" data-fieldname="date_transfer_accepted" data-signal-error-for="date_transfer_accepted{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field33" {$item_integrated_edit_field33} data-pageid="{$pageid}" data-field="date_transfer_accepted" data-fieldname="date_transfer_accepted" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_date_transfer_accepted}">
+		
+		{BEGIN date_transfer_accepted_label}{$label domains date_transfer_accepted }{END date_transfer_accepted_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$date_transfer_accepted_value}	</div>
+
+		
+</div>
+
+
+{END date_transfer_accepted_fieldblock}
+											
+{BEGIN date_transfer_rejected_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_transfer_rejected}  r-vertical-field" data-fieldname="date_transfer_rejected" data-signal-error-for="date_transfer_rejected{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field34" {$item_integrated_edit_field34} data-pageid="{$pageid}" data-field="date_transfer_rejected" data-fieldname="date_transfer_rejected" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_date_transfer_rejected}">
+		
+		{BEGIN date_transfer_rejected_label}{$label domains date_transfer_rejected }{END date_transfer_rejected_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$date_transfer_rejected_value}	</div>
+
+		
+</div>
+
+
+{END date_transfer_rejected_fieldblock}
+											
+{BEGIN date_annul_req_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_annul_req}  r-vertical-field" data-fieldname="date_annul_req" data-signal-error-for="date_annul_req{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field35" {$item_integrated_edit_field35} data-pageid="{$pageid}" data-field="date_annul_req" data-fieldname="date_annul_req" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_date_annul_req}">
+		
+		{BEGIN date_annul_req_label}{$label domains date_annul_req }{END date_annul_req_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$date_annul_req_value}	</div>
+
+		
+</div>
+
+
+{END date_annul_req_fieldblock}
+											
+{BEGIN last_status_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_last_status}  r-vertical-field" data-fieldname="last_status" data-signal-error-for="last_status{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field36" {$item_integrated_edit_field36} data-pageid="{$pageid}" data-field="last_status" data-fieldname="last_status" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_last_status}">
+		
+		{BEGIN last_status_label}{$label domains last_status }{END last_status_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$last_status_value}	</div>
+
+		
+</div>
+
+
+{END last_status_fieldblock}
+											
+{BEGIN updated_by_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_updated_by}  r-vertical-field" data-fieldname="updated_by" data-signal-error-for="updated_by{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field37" {$item_integrated_edit_field37} data-pageid="{$pageid}" data-field="updated_by" data-fieldname="updated_by" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_updated_by}">
+		
+		{BEGIN updated_by_label}{$label domains updated_by }{END updated_by_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$updated_by_value}	</div>
+
+		
+</div>
+
+
+{END updated_by_fieldblock}
+											
+{BEGIN private_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_private}  r-vertical-field" data-fieldname="private" data-signal-error-for="private{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field38" {$item_integrated_edit_field38} data-pageid="{$pageid}" data-field="private" data-fieldname="private" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_private}">
+		
+		{BEGIN private_label}{$label domains private }{END private_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$private_value}	</div>
+
+		
+</div>
+
+
+{END private_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Retour à la liste			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Fermer fenêtre			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="domains_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Editer		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

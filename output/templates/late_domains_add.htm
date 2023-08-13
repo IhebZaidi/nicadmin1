@@ -1,0 +1,607 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-add" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel late_domains add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>{mlang_message BACK_TO_LIST}</button>
+	{END message_back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>{mlang_message VIEW}</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>{mlang_message EDIT}</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN code_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_code}  r-vertical-field" 
+	data-signal-error-for="code{$id}" {$required_attr_code}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="code" data-fieldname="code" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_code}">
+		{BEGIN code_label}{$label late_domains code }{END code_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$code_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="code" {$tooltipAttr late_domains code } >
+		<div class="text-muted" >
+		{$tooltip late_domains code }		</div>
+	</div>
+</div>
+
+
+{END code_fieldblock}
+											
+{BEGIN domain_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_domain}  r-vertical-field" 
+	data-signal-error-for="domain{$id}" {$required_attr_domain}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="domain" data-fieldname="domain" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_domain}">
+		{BEGIN domain_label}{$label late_domains domain }{END domain_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$domain_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="domain" {$tooltipAttr late_domains domain } >
+		<div class="text-muted" >
+		{$tooltip late_domains domain }		</div>
+	</div>
+</div>
+
+
+{END domain_fieldblock}
+											
+{BEGIN ext_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ext}  r-vertical-field" 
+	data-signal-error-for="ext{$id}" {$required_attr_ext}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="ext" data-fieldname="ext" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ext}">
+		{BEGIN ext_label}{$label late_domains ext }{END ext_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$ext_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ext" {$tooltipAttr late_domains ext } >
+		<div class="text-muted" >
+		{$tooltip late_domains ext }		</div>
+	</div>
+</div>
+
+
+{END ext_fieldblock}
+											
+{BEGIN fsi_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fsi}  r-vertical-field" 
+	data-signal-error-for="fsi{$id}" {$required_attr_fsi}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="fsi" data-fieldname="fsi" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_fsi}">
+		{BEGIN fsi_label}{$label late_domains fsi }{END fsi_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$fsi_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="fsi" {$tooltipAttr late_domains fsi } >
+		<div class="text-muted" >
+		{$tooltip late_domains fsi }		</div>
+	</div>
+</div>
+
+
+{END fsi_fieldblock}
+											
+{BEGIN organisme_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_organisme}  r-vertical-field" 
+	data-signal-error-for="organisme{$id}" {$required_attr_organisme}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="organisme" data-fieldname="organisme" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_organisme}">
+		{BEGIN organisme_label}{$label late_domains organisme }{END organisme_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$organisme_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="organisme" {$tooltipAttr late_domains organisme } >
+		<div class="text-muted" >
+		{$tooltip late_domains organisme }		</div>
+	</div>
+</div>
+
+
+{END organisme_fieldblock}
+											
+{BEGIN adresse_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_adresse}  r-vertical-field" 
+	data-signal-error-for="adresse{$id}" {$required_attr_adresse}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="adresse" data-fieldname="adresse" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_adresse}">
+		{BEGIN adresse_label}{$label late_domains adresse }{END adresse_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$adresse_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="adresse" {$tooltipAttr late_domains adresse } >
+		<div class="text-muted" >
+		{$tooltip late_domains adresse }		</div>
+	</div>
+</div>
+
+
+{END adresse_fieldblock}
+											
+{BEGIN tel_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tel}  r-vertical-field" 
+	data-signal-error-for="tel{$id}" {$required_attr_tel}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="tel" data-fieldname="tel" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_tel}">
+		{BEGIN tel_label}{$label late_domains tel }{END tel_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$tel_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tel" {$tooltipAttr late_domains tel } >
+		<div class="text-muted" >
+		{$tooltip late_domains tel }		</div>
+	</div>
+</div>
+
+
+{END tel_fieldblock}
+											
+{BEGIN fax_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fax}  r-vertical-field" 
+	data-signal-error-for="fax{$id}" {$required_attr_fax}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="fax" data-fieldname="fax" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_fax}">
+		{BEGIN fax_label}{$label late_domains fax }{END fax_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$fax_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="fax" {$tooltipAttr late_domains fax } >
+		<div class="text-muted" >
+		{$tooltip late_domains fax }		</div>
+	</div>
+</div>
+
+
+{END fax_fieldblock}
+											
+{BEGIN email_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_email}  r-vertical-field" 
+	data-signal-error-for="email{$id}" {$required_attr_email}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="email" data-fieldname="email" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_email}">
+		{BEGIN email_label}{$label late_domains email }{END email_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$email_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="email" {$tooltipAttr late_domains email } >
+		<div class="text-muted" >
+		{$tooltip late_domains email }		</div>
+	</div>
+</div>
+
+
+{END email_fieldblock}
+											
+{BEGIN contact_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contact}  r-vertical-field" 
+	data-signal-error-for="contact{$id}" {$required_attr_contact}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="contact" data-fieldname="contact" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_contact}">
+		{BEGIN contact_label}{$label late_domains contact }{END contact_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contact_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contact" {$tooltipAttr late_domains contact } >
+		<div class="text-muted" >
+		{$tooltip late_domains contact }		</div>
+	</div>
+</div>
+
+
+{END contact_fieldblock}
+											
+{BEGIN activite_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_activite}  r-vertical-field" 
+	data-signal-error-for="activite{$id}" {$required_attr_activite}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="activite" data-fieldname="activite" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_activite}">
+		{BEGIN activite_label}{$label late_domains activite }{END activite_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$activite_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="activite" {$tooltipAttr late_domains activite } >
+		<div class="text-muted" >
+		{$tooltip late_domains activite }		</div>
+	</div>
+</div>
+
+
+{END activite_fieldblock}
+											
+{BEGIN rubrique_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_rubrique}  r-vertical-field" 
+	data-signal-error-for="rubrique{$id}" {$required_attr_rubrique}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="rubrique" data-fieldname="rubrique" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_rubrique}">
+		{BEGIN rubrique_label}{$label late_domains rubrique }{END rubrique_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$rubrique_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="rubrique" {$tooltipAttr late_domains rubrique } >
+		<div class="text-muted" >
+		{$tooltip late_domains rubrique }		</div>
+	</div>
+</div>
+
+
+{END rubrique_fieldblock}
+											
+{BEGIN date_recept_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_recept}  r-vertical-field" 
+	data-signal-error-for="date_recept{$id}" {$required_attr_date_recept}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="date_recept" data-fieldname="date_recept" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_date_recept}">
+		{BEGIN date_recept_label}{$label late_domains date_recept }{END date_recept_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$date_recept_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="date_recept" {$tooltipAttr late_domains date_recept } >
+		<div class="text-muted" >
+		{$tooltip late_domains date_recept }		</div>
+	</div>
+</div>
+
+
+{END date_recept_fieldblock}
+											
+{BEGIN date_accept_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_accept}  r-vertical-field" 
+	data-signal-error-for="date_accept{$id}" {$required_attr_date_accept}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="date_accept" data-fieldname="date_accept" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_date_accept}">
+		{BEGIN date_accept_label}{$label late_domains date_accept }{END date_accept_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$date_accept_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="date_accept" {$tooltipAttr late_domains date_accept } >
+		<div class="text-muted" >
+		{$tooltip late_domains date_accept }		</div>
+	</div>
+</div>
+
+
+{END date_accept_fieldblock}
+											
+{BEGIN date_activ_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_activ}  r-vertical-field" 
+	data-signal-error-for="date_activ{$id}" {$required_attr_date_activ}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="date_activ" data-fieldname="date_activ" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_date_activ}">
+		{BEGIN date_activ_label}{$label late_domains date_activ }{END date_activ_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$date_activ_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="date_activ" {$tooltipAttr late_domains date_activ } >
+		<div class="text-muted" >
+		{$tooltip late_domains date_activ }		</div>
+	</div>
+</div>
+
+
+{END date_activ_fieldblock}
+											
+{BEGIN date_modif_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_modif}  r-vertical-field" 
+	data-signal-error-for="date_modif{$id}" {$required_attr_date_modif}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="date_modif" data-fieldname="date_modif" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_date_modif}">
+		{BEGIN date_modif_label}{$label late_domains date_modif }{END date_modif_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$date_modif_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="date_modif" {$tooltipAttr late_domains date_modif } >
+		<div class="text-muted" >
+		{$tooltip late_domains date_modif }		</div>
+	</div>
+</div>
+
+
+{END date_modif_fieldblock}
+											
+{BEGIN date_annul_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_annul}  r-vertical-field" 
+	data-signal-error-for="date_annul{$id}" {$required_attr_date_annul}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="date_annul" data-fieldname="date_annul" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_date_annul}">
+		{BEGIN date_annul_label}{$label late_domains date_annul }{END date_annul_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$date_annul_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="date_annul" {$tooltipAttr late_domains date_annul } >
+		<div class="text-muted" >
+		{$tooltip late_domains date_annul }		</div>
+	</div>
+</div>
+
+
+{END date_annul_fieldblock}
+											
+{BEGIN etat_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_etat}  r-vertical-field" 
+	data-signal-error-for="etat{$id}" {$required_attr_etat}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="etat" data-fieldname="etat" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_etat}">
+		{BEGIN etat_label}{$label late_domains etat }{END etat_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$etat_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="etat" {$tooltipAttr late_domains etat } >
+		<div class="text-muted" >
+		{$tooltip late_domains etat }		</div>
+	</div>
+</div>
+
+
+{END etat_fieldblock}
+											
+{BEGIN modif_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_modif}  r-vertical-field" 
+	data-signal-error-for="modif{$id}" {$required_attr_modif}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="modif" data-fieldname="modif" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_modif}">
+		{BEGIN modif_label}{$label late_domains modif }{END modif_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$modif_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="modif" {$tooltipAttr late_domains modif } >
+		<div class="text-muted" >
+		{$tooltip late_domains modif }		</div>
+	</div>
+</div>
+
+
+{END modif_fieldblock}
+											
+{BEGIN commentaire_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_commentaire}  r-vertical-field" 
+	data-signal-error-for="commentaire{$id}" {$required_attr_commentaire}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="commentaire" data-fieldname="commentaire" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_commentaire}">
+		{BEGIN commentaire_label}{$label late_domains commentaire }{END commentaire_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$commentaire_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="commentaire" {$tooltipAttr late_domains commentaire } >
+		<div class="text-muted" >
+		{$tooltip late_domains commentaire }		</div>
+	</div>
+</div>
+
+
+{END commentaire_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							{mlang_message SAVE}			</a>
+</span>
+	 
+		<span data-itemtype="add_reset" data-itemid="add_reset" {$item_add_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="resetButton{$id}" >
+							{mlang_message RESET}			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							{mlang_message CANCEL}			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,1228 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel domains search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="id" data-fieldname="id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id}">
+		{$label domains id }	</label>
+	<div class="r-search-option">
+		{$searchtype_id}
+	</div>
+	<div class="r-search-field">
+		{$id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_fieldblock}
+											
+{BEGIN code_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_code}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="code{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="code" data-fieldname="code" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_code}">
+		{$label domains code }	</label>
+	<div class="r-search-option">
+		{$searchtype_code}
+	</div>
+	<div class="r-search-field">
+		{$code_editcontrol}	</div>
+	<div class="r-search-field">
+		{$code_editcontrol1}
+	</div>
+	
+</div>
+
+{END code_fieldblock}
+											
+{BEGIN domain_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_domain}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="domain{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="domain" data-fieldname="domain" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_domain}">
+		{$label domains domain }	</label>
+	<div class="r-search-option">
+		{$searchtype_domain}
+	</div>
+	<div class="r-search-field">
+		{$domain_editcontrol}	</div>
+	<div class="r-search-field">
+		{$domain_editcontrol1}
+	</div>
+	
+</div>
+
+{END domain_fieldblock}
+											
+{BEGIN domainidn_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_domainidn}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="domainidn{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="domainidn" data-fieldname="domainidn" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_domainidn}">
+		{$label domains domainidn }	</label>
+	<div class="r-search-option">
+		{$searchtype_domainidn}
+	</div>
+	<div class="r-search-field">
+		{$domainidn_editcontrol}	</div>
+	<div class="r-search-field">
+		{$domainidn_editcontrol1}
+	</div>
+	
+</div>
+
+{END domainidn_fieldblock}
+											
+{BEGIN ext_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ext}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ext{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="ext" data-fieldname="ext" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ext}">
+		{$label domains ext }	</label>
+	<div class="r-search-option">
+		{$searchtype_ext}
+	</div>
+	<div class="r-search-field">
+		{$ext_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ext_editcontrol1}
+	</div>
+	
+</div>
+
+{END ext_fieldblock}
+											
+{BEGIN fsi_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fsi}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="fsi{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="fsi" data-fieldname="fsi" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_fsi}">
+		{$label domains fsi }	</label>
+	<div class="r-search-option">
+		{$searchtype_fsi}
+	</div>
+	<div class="r-search-field">
+		{$fsi_editcontrol}	</div>
+	<div class="r-search-field">
+		{$fsi_editcontrol1}
+	</div>
+	
+</div>
+
+{END fsi_fieldblock}
+											
+{BEGIN organisme_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_organisme}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="organisme{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="organisme" data-fieldname="organisme" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_organisme}">
+		{$label domains organisme }	</label>
+	<div class="r-search-option">
+		{$searchtype_organisme}
+	</div>
+	<div class="r-search-field">
+		{$organisme_editcontrol}	</div>
+	<div class="r-search-field">
+		{$organisme_editcontrol1}
+	</div>
+	
+</div>
+
+{END organisme_fieldblock}
+											
+{BEGIN adresse_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_adresse}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="adresse{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="adresse" data-fieldname="adresse" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_adresse}">
+		{$label domains adresse }	</label>
+	<div class="r-search-option">
+		{$searchtype_adresse}
+	</div>
+	<div class="r-search-field">
+		{$adresse_editcontrol}	</div>
+	<div class="r-search-field">
+		{$adresse_editcontrol1}
+	</div>
+	
+</div>
+
+{END adresse_fieldblock}
+											
+{BEGIN tel_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tel}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="tel{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="tel" data-fieldname="tel" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_tel}">
+		{$label domains tel }	</label>
+	<div class="r-search-option">
+		{$searchtype_tel}
+	</div>
+	<div class="r-search-field">
+		{$tel_editcontrol}	</div>
+	<div class="r-search-field">
+		{$tel_editcontrol1}
+	</div>
+	
+</div>
+
+{END tel_fieldblock}
+											
+{BEGIN fax_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fax}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="fax{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="fax" data-fieldname="fax" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_fax}">
+		{$label domains fax }	</label>
+	<div class="r-search-option">
+		{$searchtype_fax}
+	</div>
+	<div class="r-search-field">
+		{$fax_editcontrol}	</div>
+	<div class="r-search-field">
+		{$fax_editcontrol1}
+	</div>
+	
+</div>
+
+{END fax_fieldblock}
+											
+{BEGIN email_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_email}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="email{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="email" data-fieldname="email" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_email}">
+		{$label domains email }	</label>
+	<div class="r-search-option">
+		{$searchtype_email}
+	</div>
+	<div class="r-search-field">
+		{$email_editcontrol}	</div>
+	<div class="r-search-field">
+		{$email_editcontrol1}
+	</div>
+	
+</div>
+
+{END email_fieldblock}
+											
+{BEGIN contact_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contact}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="contact{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="contact" data-fieldname="contact" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contact}">
+		{$label domains contact }	</label>
+	<div class="r-search-option">
+		{$searchtype_contact}
+	</div>
+	<div class="r-search-field">
+		{$contact_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contact_editcontrol1}
+	</div>
+	
+</div>
+
+{END contact_fieldblock}
+											
+{BEGIN activite_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_activite}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="activite{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="activite" data-fieldname="activite" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_activite}">
+		{$label domains activite }	</label>
+	<div class="r-search-option">
+		{$searchtype_activite}
+	</div>
+	<div class="r-search-field">
+		{$activite_editcontrol}	</div>
+	<div class="r-search-field">
+		{$activite_editcontrol1}
+	</div>
+	
+</div>
+
+{END activite_fieldblock}
+											
+{BEGIN rubrique_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_rubrique}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="rubrique{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="rubrique" data-fieldname="rubrique" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_rubrique}">
+		{$label domains rubrique }	</label>
+	<div class="r-search-option">
+		{$searchtype_rubrique}
+	</div>
+	<div class="r-search-field">
+		{$rubrique_editcontrol}	</div>
+	<div class="r-search-field">
+		{$rubrique_editcontrol1}
+	</div>
+	
+</div>
+
+{END rubrique_fieldblock}
+											
+{BEGIN date_recept_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_recept}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="date_recept{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="date_recept" data-fieldname="date_recept" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_date_recept}">
+		{$label domains date_recept }	</label>
+	<div class="r-search-option">
+		{$searchtype_date_recept}
+	</div>
+	<div class="r-search-field">
+		{$date_recept_editcontrol}	</div>
+	<div class="r-search-field">
+		{$date_recept_editcontrol1}
+	</div>
+	
+</div>
+
+{END date_recept_fieldblock}
+											
+{BEGIN date_accept_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_accept}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="date_accept{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="date_accept" data-fieldname="date_accept" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_date_accept}">
+		{$label domains date_accept }	</label>
+	<div class="r-search-option">
+		{$searchtype_date_accept}
+	</div>
+	<div class="r-search-field">
+		{$date_accept_editcontrol}	</div>
+	<div class="r-search-field">
+		{$date_accept_editcontrol1}
+	</div>
+	
+</div>
+
+{END date_accept_fieldblock}
+											
+{BEGIN date_activ_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_activ}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="date_activ{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="date_activ" data-fieldname="date_activ" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_date_activ}">
+		{$label domains date_activ }	</label>
+	<div class="r-search-option">
+		{$searchtype_date_activ}
+	</div>
+	<div class="r-search-field">
+		{$date_activ_editcontrol}	</div>
+	<div class="r-search-field">
+		{$date_activ_editcontrol1}
+	</div>
+	
+</div>
+
+{END date_activ_fieldblock}
+											
+{BEGIN date_modif_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_modif}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="date_modif{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="date_modif" data-fieldname="date_modif" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_date_modif}">
+		{$label domains date_modif }	</label>
+	<div class="r-search-option">
+		{$searchtype_date_modif}
+	</div>
+	<div class="r-search-field">
+		{$date_modif_editcontrol}	</div>
+	<div class="r-search-field">
+		{$date_modif_editcontrol1}
+	</div>
+	
+</div>
+
+{END date_modif_fieldblock}
+											
+{BEGIN date_annul_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_annul}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="date_annul{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field18" {$item_integrated_search_field18} data-pageid="{$pageid}" data-field="date_annul" data-fieldname="date_annul" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_date_annul}">
+		{$label domains date_annul }	</label>
+	<div class="r-search-option">
+		{$searchtype_date_annul}
+	</div>
+	<div class="r-search-field">
+		{$date_annul_editcontrol}	</div>
+	<div class="r-search-field">
+		{$date_annul_editcontrol1}
+	</div>
+	
+</div>
+
+{END date_annul_fieldblock}
+											
+{BEGIN date_annul_due_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_annul_due}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="date_annul_due{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field19" {$item_integrated_search_field19} data-pageid="{$pageid}" data-field="date_annul_due" data-fieldname="date_annul_due" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_date_annul_due}">
+		{$label domains date_annul_due }	</label>
+	<div class="r-search-option">
+		{$searchtype_date_annul_due}
+	</div>
+	<div class="r-search-field">
+		{$date_annul_due_editcontrol}	</div>
+	<div class="r-search-field">
+		{$date_annul_due_editcontrol1}
+	</div>
+	
+</div>
+
+{END date_annul_due_fieldblock}
+											
+{BEGIN etat_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_etat}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="etat{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field20" {$item_integrated_search_field20} data-pageid="{$pageid}" data-field="etat" data-fieldname="etat" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_etat}">
+		{$label domains etat }	</label>
+	<div class="r-search-option">
+		{$searchtype_etat}
+	</div>
+	<div class="r-search-field">
+		{$etat_editcontrol}	</div>
+	<div class="r-search-field">
+		{$etat_editcontrol1}
+	</div>
+	
+</div>
+
+{END etat_fieldblock}
+											
+{BEGIN modif_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_modif}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="modif{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field21" {$item_integrated_search_field21} data-pageid="{$pageid}" data-field="modif" data-fieldname="modif" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_modif}">
+		{$label domains modif }	</label>
+	<div class="r-search-option">
+		{$searchtype_modif}
+	</div>
+	<div class="r-search-field">
+		{$modif_editcontrol}	</div>
+	<div class="r-search-field">
+		{$modif_editcontrol1}
+	</div>
+	
+</div>
+
+{END modif_fieldblock}
+											
+{BEGIN commentaire_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_commentaire}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="commentaire{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field22" {$item_integrated_search_field22} data-pageid="{$pageid}" data-field="commentaire" data-fieldname="commentaire" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_commentaire}">
+		{$label domains commentaire }	</label>
+	<div class="r-search-option">
+		{$searchtype_commentaire}
+	</div>
+	<div class="r-search-field">
+		{$commentaire_editcontrol}	</div>
+	<div class="r-search-field">
+		{$commentaire_editcontrol1}
+	</div>
+	
+</div>
+
+{END commentaire_fieldblock}
+											
+{BEGIN ns_modif_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ns_modif}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ns_modif{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field23" {$item_integrated_search_field23} data-pageid="{$pageid}" data-field="ns_modif" data-fieldname="ns_modif" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ns_modif}">
+		{$label domains ns_modif }	</label>
+	<div class="r-search-option">
+		{$searchtype_ns_modif}
+	</div>
+	<div class="r-search-field">
+		{$ns_modif_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ns_modif_editcontrol1}
+	</div>
+	
+</div>
+
+{END ns_modif_fieldblock}
+											
+{BEGIN id_fsi_in_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_fsi_in}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="id_fsi_in{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field24" {$item_integrated_search_field24} data-pageid="{$pageid}" data-field="id_fsi_in" data-fieldname="id_fsi_in" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_fsi_in}">
+		{$label domains id_fsi_in }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_fsi_in}
+	</div>
+	<div class="r-search-field">
+		{$id_fsi_in_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_fsi_in_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_fsi_in_fieldblock}
+											
+{BEGIN domain_pw_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_domain_pw}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="domain_pw{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field25" {$item_integrated_search_field25} data-pageid="{$pageid}" data-field="domain_pw" data-fieldname="domain_pw" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_domain_pw}">
+		{$label domains domain_pw }	</label>
+	<div class="r-search-option">
+		{$searchtype_domain_pw}
+	</div>
+	<div class="r-search-field">
+		{$domain_pw_editcontrol}	</div>
+	<div class="r-search-field">
+		{$domain_pw_editcontrol1}
+	</div>
+	
+</div>
+
+{END domain_pw_fieldblock}
+											
+{BEGIN date_blocked_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_blocked}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="date_blocked{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field26" {$item_integrated_search_field26} data-pageid="{$pageid}" data-field="date_blocked" data-fieldname="date_blocked" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_date_blocked}">
+		{$label domains date_blocked }	</label>
+	<div class="r-search-option">
+		{$searchtype_date_blocked}
+	</div>
+	<div class="r-search-field">
+		{$date_blocked_editcontrol}	</div>
+	<div class="r-search-field">
+		{$date_blocked_editcontrol1}
+	</div>
+	
+</div>
+
+{END date_blocked_fieldblock}
+											
+{BEGIN date_blocked_max_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_blocked_max}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="date_blocked_max{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field27" {$item_integrated_search_field27} data-pageid="{$pageid}" data-field="date_blocked_max" data-fieldname="date_blocked_max" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_date_blocked_max}">
+		{$label domains date_blocked_max }	</label>
+	<div class="r-search-option">
+		{$searchtype_date_blocked_max}
+	</div>
+	<div class="r-search-field">
+		{$date_blocked_max_editcontrol}	</div>
+	<div class="r-search-field">
+		{$date_blocked_max_editcontrol1}
+	</div>
+	
+</div>
+
+{END date_blocked_max_fieldblock}
+											
+{BEGIN blocked_by_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_blocked_by}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="blocked_by{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field28" {$item_integrated_search_field28} data-pageid="{$pageid}" data-field="blocked_by" data-fieldname="blocked_by" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_blocked_by}">
+		{$label domains blocked_by }	</label>
+	<div class="r-search-option">
+		{$searchtype_blocked_by}
+	</div>
+	<div class="r-search-field">
+		{$blocked_by_editcontrol}	</div>
+	<div class="r-search-field">
+		{$blocked_by_editcontrol1}
+	</div>
+	
+</div>
+
+{END blocked_by_fieldblock}
+											
+{BEGIN date_unblocked_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_unblocked}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="date_unblocked{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field29" {$item_integrated_search_field29} data-pageid="{$pageid}" data-field="date_unblocked" data-fieldname="date_unblocked" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_date_unblocked}">
+		{$label domains date_unblocked }	</label>
+	<div class="r-search-option">
+		{$searchtype_date_unblocked}
+	</div>
+	<div class="r-search-field">
+		{$date_unblocked_editcontrol}	</div>
+	<div class="r-search-field">
+		{$date_unblocked_editcontrol1}
+	</div>
+	
+</div>
+
+{END date_unblocked_fieldblock}
+											
+{BEGIN date_transfer_req_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_transfer_req}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="date_transfer_req{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field30" {$item_integrated_search_field30} data-pageid="{$pageid}" data-field="date_transfer_req" data-fieldname="date_transfer_req" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_date_transfer_req}">
+		{$label domains date_transfer_req }	</label>
+	<div class="r-search-option">
+		{$searchtype_date_transfer_req}
+	</div>
+	<div class="r-search-field">
+		{$date_transfer_req_editcontrol}	</div>
+	<div class="r-search-field">
+		{$date_transfer_req_editcontrol1}
+	</div>
+	
+</div>
+
+{END date_transfer_req_fieldblock}
+											
+{BEGIN date_transfer_due_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_transfer_due}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="date_transfer_due{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field31" {$item_integrated_search_field31} data-pageid="{$pageid}" data-field="date_transfer_due" data-fieldname="date_transfer_due" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_date_transfer_due}">
+		{$label domains date_transfer_due }	</label>
+	<div class="r-search-option">
+		{$searchtype_date_transfer_due}
+	</div>
+	<div class="r-search-field">
+		{$date_transfer_due_editcontrol}	</div>
+	<div class="r-search-field">
+		{$date_transfer_due_editcontrol1}
+	</div>
+	
+</div>
+
+{END date_transfer_due_fieldblock}
+											
+{BEGIN date_transfer_canceled_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_transfer_canceled}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="date_transfer_canceled{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field32" {$item_integrated_search_field32} data-pageid="{$pageid}" data-field="date_transfer_canceled" data-fieldname="date_transfer_canceled" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_date_transfer_canceled}">
+		{$label domains date_transfer_canceled }	</label>
+	<div class="r-search-option">
+		{$searchtype_date_transfer_canceled}
+	</div>
+	<div class="r-search-field">
+		{$date_transfer_canceled_editcontrol}	</div>
+	<div class="r-search-field">
+		{$date_transfer_canceled_editcontrol1}
+	</div>
+	
+</div>
+
+{END date_transfer_canceled_fieldblock}
+											
+{BEGIN date_transfer_accepted_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_transfer_accepted}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="date_transfer_accepted{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field33" {$item_integrated_search_field33} data-pageid="{$pageid}" data-field="date_transfer_accepted" data-fieldname="date_transfer_accepted" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_date_transfer_accepted}">
+		{$label domains date_transfer_accepted }	</label>
+	<div class="r-search-option">
+		{$searchtype_date_transfer_accepted}
+	</div>
+	<div class="r-search-field">
+		{$date_transfer_accepted_editcontrol}	</div>
+	<div class="r-search-field">
+		{$date_transfer_accepted_editcontrol1}
+	</div>
+	
+</div>
+
+{END date_transfer_accepted_fieldblock}
+											
+{BEGIN date_transfer_rejected_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_transfer_rejected}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="date_transfer_rejected{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field34" {$item_integrated_search_field34} data-pageid="{$pageid}" data-field="date_transfer_rejected" data-fieldname="date_transfer_rejected" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_date_transfer_rejected}">
+		{$label domains date_transfer_rejected }	</label>
+	<div class="r-search-option">
+		{$searchtype_date_transfer_rejected}
+	</div>
+	<div class="r-search-field">
+		{$date_transfer_rejected_editcontrol}	</div>
+	<div class="r-search-field">
+		{$date_transfer_rejected_editcontrol1}
+	</div>
+	
+</div>
+
+{END date_transfer_rejected_fieldblock}
+											
+{BEGIN date_annul_req_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_annul_req}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="date_annul_req{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field35" {$item_integrated_search_field35} data-pageid="{$pageid}" data-field="date_annul_req" data-fieldname="date_annul_req" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_date_annul_req}">
+		{$label domains date_annul_req }	</label>
+	<div class="r-search-option">
+		{$searchtype_date_annul_req}
+	</div>
+	<div class="r-search-field">
+		{$date_annul_req_editcontrol}	</div>
+	<div class="r-search-field">
+		{$date_annul_req_editcontrol1}
+	</div>
+	
+</div>
+
+{END date_annul_req_fieldblock}
+											
+{BEGIN last_status_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_last_status}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="last_status{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field36" {$item_integrated_search_field36} data-pageid="{$pageid}" data-field="last_status" data-fieldname="last_status" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_last_status}">
+		{$label domains last_status }	</label>
+	<div class="r-search-option">
+		{$searchtype_last_status}
+	</div>
+	<div class="r-search-field">
+		{$last_status_editcontrol}	</div>
+	<div class="r-search-field">
+		{$last_status_editcontrol1}
+	</div>
+	
+</div>
+
+{END last_status_fieldblock}
+											
+{BEGIN updated_by_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_updated_by}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="updated_by{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field37" {$item_integrated_search_field37} data-pageid="{$pageid}" data-field="updated_by" data-fieldname="updated_by" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_updated_by}">
+		{$label domains updated_by }	</label>
+	<div class="r-search-option">
+		{$searchtype_updated_by}
+	</div>
+	<div class="r-search-field">
+		{$updated_by_editcontrol}	</div>
+	<div class="r-search-field">
+		{$updated_by_editcontrol1}
+	</div>
+	
+</div>
+
+{END updated_by_fieldblock}
+											
+{BEGIN private_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_private}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="private{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field38" {$item_integrated_search_field38} data-pageid="{$pageid}" data-field="private" data-fieldname="private" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_private}">
+		{$label domains private }	</label>
+	<div class="r-search-option">
+		{$searchtype_private}
+	</div>
+	<div class="r-search-field">
+		{$private_editcontrol}	</div>
+	<div class="r-search-field">
+		{$private_editcontrol1}
+	</div>
+	
+</div>
+
+{END private_fieldblock}
+											
+{BEGIN mgmt_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mgmt}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="mgmt{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field39" {$item_integrated_search_field39} data-pageid="{$pageid}" data-field="mgmt" data-fieldname="mgmt" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_mgmt}">
+		{$label domains mgmt }	</label>
+	<div class="r-search-option">
+		{$searchtype_mgmt}
+	</div>
+	<div class="r-search-field">
+		{$mgmt_editcontrol}	</div>
+	<div class="r-search-field">
+		{$mgmt_editcontrol1}
+	</div>
+	
+</div>
+
+{END mgmt_fieldblock}
+											
+{BEGIN forward_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_forward}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="forward{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field40" {$item_integrated_search_field40} data-pageid="{$pageid}" data-field="forward" data-fieldname="forward" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_forward}">
+		{$label domains forward }	</label>
+	<div class="r-search-option">
+		{$searchtype_forward}
+	</div>
+	<div class="r-search-field">
+		{$forward_editcontrol}	</div>
+	<div class="r-search-field">
+		{$forward_editcontrol1}
+	</div>
+	
+</div>
+
+{END forward_fieldblock}
+											
+{BEGIN dnssec_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dnssec}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="dnssec{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field41" {$item_integrated_search_field41} data-pageid="{$pageid}" data-field="dnssec" data-fieldname="dnssec" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_dnssec}">
+		{$label domains dnssec }	</label>
+	<div class="r-search-option">
+		{$searchtype_dnssec}
+	</div>
+	<div class="r-search-field">
+		{$dnssec_editcontrol}	</div>
+	<div class="r-search-field">
+		{$dnssec_editcontrol1}
+	</div>
+	
+</div>
+
+{END dnssec_fieldblock}
+											
+{BEGIN stat_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_stat}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="stat{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field42" {$item_integrated_search_field42} data-pageid="{$pageid}" data-field="stat" data-fieldname="stat" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_stat}">
+		{$label domains stat }	</label>
+	<div class="r-search-option">
+		{$searchtype_stat}
+	</div>
+	<div class="r-search-field">
+		{$stat_editcontrol}	</div>
+	<div class="r-search-field">
+		{$stat_editcontrol1}
+	</div>
+	
+</div>
+
+{END stat_fieldblock}
+											
+{BEGIN in_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_in}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="in{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field43" {$item_integrated_search_field43} data-pageid="{$pageid}" data-field="in" data-fieldname="in" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_in}">
+		{$label domains in }	</label>
+	<div class="r-search-option">
+		{$searchtype_in}
+	</div>
+	<div class="r-search-field">
+		{$in_editcontrol}	</div>
+	<div class="r-search-field">
+		{$in_editcontrol1}
+	</div>
+	
+</div>
+
+{END in_fieldblock}
+											
+{BEGIN change_prop_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_change_prop}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="change_prop{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field44" {$item_integrated_search_field44} data-pageid="{$pageid}" data-field="change_prop" data-fieldname="change_prop" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_change_prop}">
+		{$label domains change_prop }	</label>
+	<div class="r-search-option">
+		{$searchtype_change_prop}
+	</div>
+	<div class="r-search-field">
+		{$change_prop_editcontrol}	</div>
+	<div class="r-search-field">
+		{$change_prop_editcontrol1}
+	</div>
+	
+</div>
+
+{END change_prop_fieldblock}
+											
+{BEGIN reg_annul_reason_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_reg_annul_reason}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="reg_annul_reason{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field45" {$item_integrated_search_field45} data-pageid="{$pageid}" data-field="reg_annul_reason" data-fieldname="reg_annul_reason" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_reg_annul_reason}">
+		{$label domains reg_annul_reason }	</label>
+	<div class="r-search-option">
+		{$searchtype_reg_annul_reason}
+	</div>
+	<div class="r-search-field">
+		{$reg_annul_reason_editcontrol}	</div>
+	<div class="r-search-field">
+		{$reg_annul_reason_editcontrol1}
+	</div>
+	
+</div>
+
+{END reg_annul_reason_fieldblock}
+											
+{BEGIN reg_comment_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_reg_comment}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="reg_comment{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field46" {$item_integrated_search_field46} data-pageid="{$pageid}" data-field="reg_comment" data-fieldname="reg_comment" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_reg_comment}">
+		{$label domains reg_comment }	</label>
+	<div class="r-search-option">
+		{$searchtype_reg_comment}
+	</div>
+	<div class="r-search-field">
+		{$reg_comment_editcontrol}	</div>
+	<div class="r-search-field">
+		{$reg_comment_editcontrol1}
+	</div>
+	
+</div>
+
+{END reg_comment_fieldblock}
+											
+{BEGIN reg_transfer_prohibited_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_reg_transfer_prohibited}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="reg_transfer_prohibited{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field47" {$item_integrated_search_field47} data-pageid="{$pageid}" data-field="reg_transfer_prohibited" data-fieldname="reg_transfer_prohibited" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_reg_transfer_prohibited}">
+		{$label domains reg_transfer_prohibited }	</label>
+	<div class="r-search-option">
+		{$searchtype_reg_transfer_prohibited}
+	</div>
+	<div class="r-search-field">
+		{$reg_transfer_prohibited_editcontrol}	</div>
+	<div class="r-search-field">
+		{$reg_transfer_prohibited_editcontrol1}
+	</div>
+	
+</div>
+
+{END reg_transfer_prohibited_fieldblock}
+											
+{BEGIN reg_restore_prohibited_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_reg_restore_prohibited}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="reg_restore_prohibited{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field48" {$item_integrated_search_field48} data-pageid="{$pageid}" data-field="reg_restore_prohibited" data-fieldname="reg_restore_prohibited" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_reg_restore_prohibited}">
+		{$label domains reg_restore_prohibited }	</label>
+	<div class="r-search-option">
+		{$searchtype_reg_restore_prohibited}
+	</div>
+	<div class="r-search-field">
+		{$reg_restore_prohibited_editcontrol}	</div>
+	<div class="r-search-field">
+		{$reg_restore_prohibited_editcontrol1}
+	</div>
+	
+</div>
+
+{END reg_restore_prohibited_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} data-page=undefined >
+							Rechercher			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Remettre			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Retour à la liste			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Annuler			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
